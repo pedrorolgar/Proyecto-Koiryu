@@ -16,6 +16,7 @@ public class RecuperarContraseña extends javax.swing.JFrame {
   public RecuperarContraseña() {
     initComponents();
     correoRecuperar.putClientProperty("JTextField.placeholderText", "TuCorreo@Gmail.com");
+    correoRecuperar.putClientProperty("FlatLaf.style", "arc:10");
 
   }
 
@@ -29,7 +30,6 @@ public class RecuperarContraseña extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    correoRecuperar = new javax.swing.JTextField();
     EnviarRecuperar = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
@@ -42,16 +42,11 @@ public class RecuperarContraseña extends javax.swing.JFrame {
     jLabel7 = new javax.swing.JLabel();
     jLabel16 = new javax.swing.JLabel();
     goToLogin1 = new javax.swing.JLabel();
+    correoRecuperar = new javax.swing.JTextField();
     fondo = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    correoRecuperar.setBackground(new java.awt.Color(12, 50, 36));
-    correoRecuperar.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    correoRecuperar.setForeground(new java.awt.Color(255, 255, 255));
-    correoRecuperar.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    getContentPane().add(correoRecuperar, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 460, 68));
 
     EnviarRecuperar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Enviar Button.png"))); // NOI18N
     getContentPane().add(EnviarRecuperar, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 525, 460, 63));
@@ -113,6 +108,10 @@ public class RecuperarContraseña extends javax.swing.JFrame {
       }
     });
     getContentPane().add(goToLogin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 702, -1, -1));
+
+    correoRecuperar.setBackground(new java.awt.Color(12, 50, 36));
+    correoRecuperar.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(correoRecuperar, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 460, 68));
 
     fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Captura fondo Login.png"))); // NOI18N
     fondo.setText("jLabel2");

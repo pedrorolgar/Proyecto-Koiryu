@@ -5,6 +5,7 @@
 package Vista;
 
 import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.formdev.flatlaf.FlatLightLaf;
 
 /**
  *
@@ -18,10 +19,13 @@ public class Login extends javax.swing.JFrame {
   public Login() {
     setVisible(true);
     FlatIntelliJLaf.setup();
+    FlatLightLaf.setup();
     initComponents();
     usuLogin.putClientProperty("JTextField.placeholderText", "Nombre de usuario");
-    ContraLogin.putClientProperty("JTextField.placeholderText", "Contraseña");
+    contraLogin.putClientProperty("JTextField.placeholderText", "Contraseña");
     repaint();
+    usuLogin.putClientProperty("FlatLaf.style", "arc:10");
+    contraLogin.putClientProperty("FlatLaf.style", "arc:10");
   }
 
   /**
@@ -34,8 +38,6 @@ public class Login extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    ContraLogin = new javax.swing.JTextField();
-    usuLogin = new javax.swing.JTextField();
     LoginBtn = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
@@ -47,27 +49,12 @@ public class Login extends javax.swing.JFrame {
     jLabel13 = new javax.swing.JLabel();
     goToSign = new javax.swing.JLabel();
     jLabel15 = new javax.swing.JLabel();
+    usuLogin = new javax.swing.JTextField();
+    contraLogin = new javax.swing.JTextField();
     fondo = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    ContraLogin.setBackground(new java.awt.Color(12, 50, 36));
-    ContraLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    ContraLogin.setForeground(new java.awt.Color(255, 255, 255));
-    ContraLogin.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    getContentPane().add(ContraLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
-
-    usuLogin.setBackground(new java.awt.Color(12, 50, 36));
-    usuLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    usuLogin.setForeground(new java.awt.Color(255, 255, 255));
-    usuLogin.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    usuLogin.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        usuLoginActionPerformed(evt);
-      }
-    });
-    getContentPane().add(usuLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 258, 460, 68));
 
     LoginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Login Button.png"))); // NOI18N
     getContentPane().add(LoginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 525, 460, 63));
@@ -130,16 +117,22 @@ public class Login extends javax.swing.JFrame {
     jLabel15.setText("¿No recuerdas tu contraseña?");
     getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 702, -1, -1));
 
+    usuLogin.setBackground(new java.awt.Color(12, 50, 36));
+    usuLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    usuLogin.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(usuLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 258, 460, 68));
+
+    contraLogin.setBackground(new java.awt.Color(12, 50, 36));
+    contraLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    contraLogin.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(contraLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
+
     fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Captura fondo Login.png"))); // NOI18N
     fondo.setText("jLabel2");
     getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1430, 930));
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
-
-  private void usuLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuLoginActionPerformed
-    // TODO add your handling code here:
-  }//GEN-LAST:event_usuLoginActionPerformed
 
   private void goToRecuperarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToRecuperarMouseClicked
     new RecuperarContraseña().setVisible(true);
@@ -191,8 +184,8 @@ public class Login extends javax.swing.JFrame {
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JTextField ContraLogin;
   private javax.swing.JLabel LoginBtn;
+  private javax.swing.JTextField contraLogin;
   private javax.swing.JLabel fondo;
   private javax.swing.JLabel goToRecuperar;
   private javax.swing.JLabel goToSign;

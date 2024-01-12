@@ -15,9 +15,13 @@ public class SignIn extends javax.swing.JFrame {
    */
   public SignIn() {
     initComponents();
-    usuSignIn.putClientProperty("JTextField.placeholderText", "Nombre de usuario");
-    correoSignIn.putClientProperty("JTextField.placeholderText", "TuCorreo@Gmail.com");
-    contraSignIn.putClientProperty("JTextField.placeholderText", "Contraseña");
+    usuSign.putClientProperty("JTextField.placeholderText", "Nombre de usuario");
+    correoSign.putClientProperty("JTextField.placeholderText", "TuCorreo@Gmail.com");
+    contraSign.putClientProperty("JTextField.placeholderText", "Contraseña");
+    usuSign.putClientProperty("FlatLaf.style", "arc:10");
+    contraSign.putClientProperty("FlatLaf.style", "arc:10");
+    correoSign.putClientProperty("FlatLaf.style", "arc:10");
+    generoCb.putClientProperty("FlatLaf.style", "arc:10");
 
   }
 
@@ -31,10 +35,6 @@ public class SignIn extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
-    contraSignIn = new javax.swing.JTextField();
-    correoSignIn = new javax.swing.JTextField();
-    usuSignIn = new javax.swing.JTextField();
-    generoCb = new javax.swing.JComboBox<>();
     SignInBtn = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
@@ -44,40 +44,14 @@ public class SignIn extends javax.swing.JFrame {
     goToLogin = new javax.swing.JLabel();
     jLabel12 = new javax.swing.JLabel();
     jLabel15 = new javax.swing.JLabel();
+    usuSign = new javax.swing.JTextField();
+    correoSign = new javax.swing.JTextField();
+    contraSign = new javax.swing.JTextField();
+    generoCb = new javax.swing.JComboBox<>();
     fondo = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    contraSignIn.setBackground(new java.awt.Color(12, 50, 36));
-    contraSignIn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    contraSignIn.setForeground(new java.awt.Color(255, 255, 255));
-    contraSignIn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    getContentPane().add(contraSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
-
-    correoSignIn.setBackground(new java.awt.Color(12, 50, 36));
-    correoSignIn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    correoSignIn.setForeground(new java.awt.Color(255, 255, 255));
-    correoSignIn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    getContentPane().add(correoSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 258, 460, 68));
-
-    usuSignIn.setBackground(new java.awt.Color(12, 50, 36));
-    usuSignIn.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    usuSignIn.setForeground(new java.awt.Color(255, 255, 255));
-    usuSignIn.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    usuSignIn.addActionListener(new java.awt.event.ActionListener() {
-      public void actionPerformed(java.awt.event.ActionEvent evt) {
-        usuSignInActionPerformed(evt);
-      }
-    });
-    getContentPane().add(usuSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 175, 460, 68));
-
-    generoCb.setBackground(new java.awt.Color(12, 50, 36));
-    generoCb.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    generoCb.setForeground(new java.awt.Color(255, 255, 255));
-    generoCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino", "Otro" }));
-    generoCb.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-    getContentPane().add(generoCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 424, 460, 68));
 
     SignInBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/SignUp Button.png"))); // NOI18N
     getContentPane().add(SignInBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 525, 460, 63));
@@ -125,6 +99,32 @@ public class SignIn extends javax.swing.JFrame {
     jLabel15.setText("¿Ya tienes cuenta?");
     getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 702, -1, -1));
 
+    usuSign.setBackground(new java.awt.Color(12, 50, 36));
+    usuSign.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    usuSign.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(usuSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 175, 460, 68));
+
+    correoSign.setBackground(new java.awt.Color(12, 50, 36));
+    correoSign.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    correoSign.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(correoSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 258, 460, 68));
+
+    contraSign.setBackground(new java.awt.Color(12, 50, 36));
+    contraSign.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    contraSign.setForeground(new java.awt.Color(255, 255, 255));
+    getContentPane().add(contraSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
+
+    generoCb.setBackground(new java.awt.Color(12, 50, 36));
+    generoCb.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    generoCb.setForeground(new java.awt.Color(255, 255, 255));
+    generoCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Femenino", "Otro", " " }));
+    generoCb.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        generoCbActionPerformed(evt);
+      }
+    });
+    getContentPane().add(generoCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 421, 460, 68));
+
     fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Captura fondo Login.png"))); // NOI18N
     fondo.setText("jLabel2");
     getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1430, 930));
@@ -132,15 +132,15 @@ public class SignIn extends javax.swing.JFrame {
     pack();
   }// </editor-fold>//GEN-END:initComponents
 
-  private void usuSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuSignInActionPerformed
-    // TODO add your handling code here:
-  }//GEN-LAST:event_usuSignInActionPerformed
-
   private void goToLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToLoginMouseClicked
     // TODO add your handling code here:
     new Login().setVisible(true);
     new SignIn().setVisible(false);
   }//GEN-LAST:event_goToLoginMouseClicked
+
+  private void generoCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generoCbActionPerformed
+    // TODO add your handling code here:
+  }//GEN-LAST:event_generoCbActionPerformed
 
   /**
    * @param args the command line arguments
@@ -186,8 +186,8 @@ public class SignIn extends javax.swing.JFrame {
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel SignInBtn;
-  private javax.swing.JTextField contraSignIn;
-  private javax.swing.JTextField correoSignIn;
+  private javax.swing.JTextField contraSign;
+  private javax.swing.JTextField correoSign;
   private javax.swing.JLabel fondo;
   private javax.swing.JComboBox<String> generoCb;
   private javax.swing.JLabel goToLogin;
@@ -198,6 +198,6 @@ public class SignIn extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel4;
   private javax.swing.JLabel jLabel5;
   private javax.swing.JLabel jLabel6;
-  private javax.swing.JTextField usuSignIn;
+  private javax.swing.JTextField usuSign;
   // End of variables declaration//GEN-END:variables
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 12 ene 2024 22:06:41 by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="koiryu" name="Model.Likescitas" optimistic-lock="none" table="likescitas">
+        <id name="likeCitaId" type="java.lang.Integer">
+            <column name="LikeCitaID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="Model.Usuarios" fetch="select" name="usuarios">
+            <column name="UsuarioID"/>
+        </many-to-one>
+        <many-to-one class="Model.Citas" fetch="select" name="citas">
+            <column name="CitaID"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>
