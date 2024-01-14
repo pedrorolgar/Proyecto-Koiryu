@@ -4,10 +4,14 @@
  */
 package Vista;
 
+import Controlador.cRecuperarContraseña;
+import lombok.Getter;
+
 /**
- *
+ * The type Recuperar contraseña.
  * @author Pedro Rollán García
  */
+@Getter
 public class RecuperarContraseña extends javax.swing.JFrame {
 
   /**
@@ -15,8 +19,9 @@ public class RecuperarContraseña extends javax.swing.JFrame {
    */
   public RecuperarContraseña() {
     initComponents();
-    correoRecuperar.putClientProperty("JTextField.placeholderText", "TuCorreo@Gmail.com");
-    correoRecuperar.putClientProperty("FlatLaf.style", "arc:10");
+    cRecuperarContraseña Controlador = new cRecuperarContraseña(this);
+    Controlador.actualizarEstilos();
+    Controlador.inicializarEventos();
 
   }
 
@@ -123,10 +128,12 @@ public class RecuperarContraseña extends javax.swing.JFrame {
 
   private void goToLogin1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToLogin1MouseClicked
     new Login().setVisible(true);
-    new RecuperarContraseña().setVisible(false);    // TODO add your handling code here:
+    dispose();  // TODO add your handling code here:
   }//GEN-LAST:event_goToLogin1MouseClicked
 
   /**
+   * Main.
+   *
    * @param args the command line arguments
    */
   public static void main(String args[]) {

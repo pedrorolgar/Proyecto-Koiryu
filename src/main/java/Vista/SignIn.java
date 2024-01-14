@@ -4,10 +4,14 @@
  */
 package Vista;
 
+import Controlador.cSignIn;
+import lombok.Getter;
+
 /**
- *
+ * The type Sign in.
  * @author Pedro Rollán García
  */
+@Getter
 public class SignIn extends javax.swing.JFrame {
 
   /**
@@ -15,13 +19,9 @@ public class SignIn extends javax.swing.JFrame {
    */
   public SignIn() {
     initComponents();
-    usuSign.putClientProperty("JTextField.placeholderText", "Nombre de usuario");
-    correoSign.putClientProperty("JTextField.placeholderText", "TuCorreo@Gmail.com");
-    contraSign.putClientProperty("JTextField.placeholderText", "Contraseña");
-    usuSign.putClientProperty("FlatLaf.style", "arc:10");
-    contraSign.putClientProperty("FlatLaf.style", "arc:10");
-    correoSign.putClientProperty("FlatLaf.style", "arc:10");
-    generoCb.putClientProperty("FlatLaf.style", "arc:10");
+    cSignIn Controlador = new cSignIn(this);
+    Controlador.actualizarEstilos();
+    Controlador.InicializarEventos();
 
   }
 
@@ -46,7 +46,7 @@ public class SignIn extends javax.swing.JFrame {
     jLabel15 = new javax.swing.JLabel();
     usuSign = new javax.swing.JTextField();
     correoSign = new javax.swing.JTextField();
-    contraSign = new javax.swing.JTextField();
+    contraSign = new javax.swing.JPasswordField();
     generoCb = new javax.swing.JComboBox<>();
     fondo = new javax.swing.JLabel();
 
@@ -111,7 +111,6 @@ public class SignIn extends javax.swing.JFrame {
 
     contraSign.setBackground(new java.awt.Color(12, 50, 36));
     contraSign.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    contraSign.setForeground(new java.awt.Color(255, 255, 255));
     getContentPane().add(contraSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
 
     generoCb.setBackground(new java.awt.Color(12, 50, 36));
@@ -135,7 +134,7 @@ public class SignIn extends javax.swing.JFrame {
   private void goToLoginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToLoginMouseClicked
     // TODO add your handling code here:
     new Login().setVisible(true);
-    new SignIn().setVisible(false);
+    dispose();
   }//GEN-LAST:event_goToLoginMouseClicked
 
   private void generoCbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generoCbActionPerformed
@@ -143,6 +142,8 @@ public class SignIn extends javax.swing.JFrame {
   }//GEN-LAST:event_generoCbActionPerformed
 
   /**
+   * Main.
+   *
    * @param args the command line arguments
    */
   public static void main(String args[]) {
@@ -186,7 +187,7 @@ public class SignIn extends javax.swing.JFrame {
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel SignInBtn;
-  private javax.swing.JTextField contraSign;
+  private javax.swing.JPasswordField contraSign;
   private javax.swing.JTextField correoSign;
   private javax.swing.JLabel fondo;
   private javax.swing.JComboBox<String> generoCb;

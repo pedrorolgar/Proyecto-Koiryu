@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * The type Pantalla de carga.
  * @author Pedro Rollán García
  */
 public class PantallaDeCarga extends javax.swing.JFrame {
@@ -33,7 +33,7 @@ public class PantallaDeCarga extends javax.swing.JFrame {
         while (porcentaje < 100) {
           carga.setValue(porcentaje);
           try {
-            Thread.sleep(50);
+            Thread.sleep(1);
           } catch (InterruptedException ex) {
             Logger.getLogger(PantallaDeCarga.class.getName()).log(Level.SEVERE, null, ex);
           }
@@ -76,6 +76,8 @@ public class PantallaDeCarga extends javax.swing.JFrame {
   }// </editor-fold>//GEN-END:initComponents
 
   /**
+   * Main.
+   *
    * @param args the command line arguments
    */
   public static void main(String args[]) {
@@ -125,6 +127,9 @@ public class PantallaDeCarga extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel1;
   // End of variables declaration//GEN-END:variables
 
+  /**
+   * Abrir principal.
+   */
   public void abrirPrincipal() {
     java.awt.EventQueue.invokeLater(() -> {
       new Login().setVisible(true);

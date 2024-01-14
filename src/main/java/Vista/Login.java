@@ -4,13 +4,16 @@
  */
 package Vista;
 
+import Controlador.cLogin;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
+import lombok.Getter;
 
 /**
- *
+ * The type Login.
  * @author Pedro Rollán García
  */
+@Getter
 public class Login extends javax.swing.JFrame {
 
   /**
@@ -21,11 +24,9 @@ public class Login extends javax.swing.JFrame {
     FlatIntelliJLaf.setup();
     FlatLightLaf.setup();
     initComponents();
-    usuLogin.putClientProperty("JTextField.placeholderText", "Nombre de usuario");
-    contraLogin.putClientProperty("JTextField.placeholderText", "Contraseña");
-    repaint();
-    usuLogin.putClientProperty("FlatLaf.style", "arc:10");
-    contraLogin.putClientProperty("FlatLaf.style", "arc:10");
+    cLogin Controlador = new cLogin(this);
+    Controlador.actualizarEstilos();
+    Controlador.inicializarEventos();
   }
 
   /**
@@ -49,8 +50,8 @@ public class Login extends javax.swing.JFrame {
     jLabel13 = new javax.swing.JLabel();
     goToSign = new javax.swing.JLabel();
     jLabel15 = new javax.swing.JLabel();
+    contraLogin = new javax.swing.JPasswordField();
     usuLogin = new javax.swing.JTextField();
-    contraLogin = new javax.swing.JTextField();
     fondo = new javax.swing.JLabel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,15 +118,14 @@ public class Login extends javax.swing.JFrame {
     jLabel15.setText("¿No recuerdas tu contraseña?");
     getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(901, 702, -1, -1));
 
+    contraLogin.setBackground(new java.awt.Color(12, 50, 36));
+    contraLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+    getContentPane().add(contraLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
+
     usuLogin.setBackground(new java.awt.Color(12, 50, 36));
     usuLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
     usuLogin.setForeground(new java.awt.Color(255, 255, 255));
     getContentPane().add(usuLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 258, 460, 68));
-
-    contraLogin.setBackground(new java.awt.Color(12, 50, 36));
-    contraLogin.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-    contraLogin.setForeground(new java.awt.Color(255, 255, 255));
-    getContentPane().add(contraLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 341, 460, 68));
 
     fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Captura fondo Login.png"))); // NOI18N
     fondo.setText("jLabel2");
@@ -136,15 +136,17 @@ public class Login extends javax.swing.JFrame {
 
   private void goToRecuperarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToRecuperarMouseClicked
     new RecuperarContraseña().setVisible(true);
-    new Login().setVisible(false);// TODO add your handling code here:
+    dispose();// TODO add your handling code here:
   }//GEN-LAST:event_goToRecuperarMouseClicked
 
   private void goToSignMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_goToSignMouseClicked
     new SignIn().setVisible(true);
-    new Login().setVisible(false);   // TODO add your handling code here:
+    dispose();  // TODO add your handling code here:
   }//GEN-LAST:event_goToSignMouseClicked
 
   /**
+   * Main.
+   *
    * @param args the command line arguments
    */
   public static void main(String args[]) {
@@ -185,7 +187,7 @@ public class Login extends javax.swing.JFrame {
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel LoginBtn;
-  private javax.swing.JTextField contraLogin;
+  private javax.swing.JPasswordField contraLogin;
   private javax.swing.JLabel fondo;
   private javax.swing.JLabel goToRecuperar;
   private javax.swing.JLabel goToSign;
