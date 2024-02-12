@@ -31,6 +31,13 @@ public class MisEventos extends javax.swing.JPanel {
     jLabel2 = new javax.swing.JLabel();
     jButton1 = new javax.swing.JButton();
     jLabel3 = new javax.swing.JLabel();
+    jLabel4 = new javax.swing.JLabel();
+    jLabel5 = new javax.swing.JLabel();
+    jLabel6 = new javax.swing.JLabel();
+    jLabel7 = new javax.swing.JLabel();
+    jLabel8 = new javax.swing.JLabel();
+    jLabel9 = new javax.swing.JLabel();
+    jLabel10 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -50,14 +57,48 @@ public class MisEventos extends javax.swing.JPanel {
 
     jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
     jLabel3.setForeground(new java.awt.Color(159, 255, 0));
-    jLabel3.setText("jLabel3");
-    add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
+    jLabel3.setText("Nombre");
+    add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 92, -1, -1));
+
+    jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel4.setForeground(new java.awt.Color(159, 255, 0));
+    jLabel4.setText("Descripción");
+    add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 92, -1, -1));
+
+    jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel5.setForeground(new java.awt.Color(159, 255, 0));
+    jLabel5.setText("Autor");
+    add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 92, -1, -1));
+
+    jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel6.setForeground(new java.awt.Color(159, 255, 0));
+    jLabel6.setText("Tipo");
+    add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(848, 92, -1, -1));
+
+    jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FlechaAbajoVerde.png"))); // NOI18N
+    add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 88, -1, -1));
+
+    jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FlechaAbajoVerde.png"))); // NOI18N
+    add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 88, -1, -1));
+
+    jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FlechaAbajoVerde.png"))); // NOI18N
+    add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 88, -1, -1));
+
+    jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FlechaAbajoVerde.png"))); // NOI18N
+    add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 88, -1, -1));
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton jButton1;
   private javax.swing.JLabel jLabel1;
+  private javax.swing.JLabel jLabel10;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;
+  private javax.swing.JLabel jLabel4;
+  private javax.swing.JLabel jLabel5;
+  private javax.swing.JLabel jLabel6;
+  private javax.swing.JLabel jLabel7;
+  private javax.swing.JLabel jLabel8;
+  private javax.swing.JLabel jLabel9;
   // End of variables declaration//GEN-END:variables
 }
