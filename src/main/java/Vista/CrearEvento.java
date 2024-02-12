@@ -52,10 +52,12 @@ public class CrearEvento extends javax.swing.JPanel {
 
     descripcionEvento.setBackground(new java.awt.Color(51, 51, 51));
     descripcionEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    descripcionEvento.setForeground(new java.awt.Color(145, 158, 171));
     add(descripcionEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 488, 698, 145));
 
     nombreEvento1.setBackground(new java.awt.Color(51, 51, 51));
     nombreEvento1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    nombreEvento1.setForeground(new java.awt.Color(145, 158, 171));
     add(nombreEvento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 365, 491, 41));
 
     jComboBox1.setBackground(new java.awt.Color(51, 51, 51));

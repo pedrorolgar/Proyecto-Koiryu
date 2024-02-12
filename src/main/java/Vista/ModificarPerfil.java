@@ -30,8 +30,16 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jSeparator2 = new javax.swing.JSeparator();
     jLabel8 = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
-    jPanel2 = new javax.swing.JPanel();
-    panelEventos = new javax.swing.JPanel();
+    jLabel2 = new javax.swing.JLabel();
+    jLabel10 = new javax.swing.JLabel();
+    panelImagenFondo = new javax.swing.JPanel();
+    editarNombre = new javax.swing.JTextField();
+    editarCorreo = new javax.swing.JTextField();
+    telefono = new javax.swing.JTextField();
+    ciudad = new javax.swing.JTextField();
+    editarDescripcion = new javax.swing.JTextField();
+    panelEditarPerfil = new javax.swing.JPanel();
+    jLabel7 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -48,35 +56,78 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N
     add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 16, 34, 38));
 
-    jPanel2.setBackground(new java.awt.Color(50, 49, 49));
+    jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirFoto.png"))); // NOI18N
+    add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 218, 124, 124));
 
-    javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-    jPanel2.setLayout(jPanel2Layout);
-    jPanel2Layout.setHorizontalGroup(
-      jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+    jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, 40, 40));
+
+    panelImagenFondo.setBackground(new java.awt.Color(50, 49, 49));
+
+    javax.swing.GroupLayout panelImagenFondoLayout = new javax.swing.GroupLayout(panelImagenFondo);
+    panelImagenFondo.setLayout(panelImagenFondoLayout);
+    panelImagenFondoLayout.setHorizontalGroup(
+      panelImagenFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGap(0, 800, Short.MAX_VALUE)
     );
-    jPanel2Layout.setVerticalGroup(
-      jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+    panelImagenFondoLayout.setVerticalGroup(
+      panelImagenFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
       .addGap(0, 174, Short.MAX_VALUE)
     );
 
-    add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 90, 800, 174));
+    add(panelImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 90, 800, 174));
 
-    panelEventos.setBackground(new java.awt.Color(75, 76, 73));
-    panelEventos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-    add(panelEventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 85, 803, 660));
+    editarNombre.setBackground(new java.awt.Color(51, 51, 51));
+    editarNombre.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    editarNombre.setForeground(new java.awt.Color(145, 158, 171));
+    add(editarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 365, 253, 41));
+
+    editarCorreo.setBackground(new java.awt.Color(51, 51, 51));
+    editarCorreo.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    editarCorreo.setForeground(new java.awt.Color(145, 158, 171));
+    add(editarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 424, 253, 41));
+
+    telefono.setBackground(new java.awt.Color(51, 51, 51));
+    telefono.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    telefono.setForeground(new java.awt.Color(145, 158, 171));
+    add(telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 482, 253, 41));
+
+    ciudad.setBackground(new java.awt.Color(51, 51, 51));
+    ciudad.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    ciudad.setForeground(new java.awt.Color(145, 158, 171));
+    add(ciudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 540, 253, 41));
+
+    editarDescripcion.setBackground(new java.awt.Color(51, 51, 51));
+    editarDescripcion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    editarDescripcion.setForeground(new java.awt.Color(145, 158, 171));
+    add(editarDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 612, 257, 115));
+
+    panelEditarPerfil.setBackground(new java.awt.Color(75, 76, 73));
+    panelEditarPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    panelEditarPerfil.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, -1));
+
+    add(panelEditarPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 85, 803, 660));
 
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/marcoFlores.jpeg"))); // NOI18N
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JTextField ciudad;
+  private javax.swing.JTextField editarCorreo;
+  private javax.swing.JTextField editarDescripcion;
+  private javax.swing.JTextField editarNombre;
   private javax.swing.JLabel jLabel1;
+  private javax.swing.JLabel jLabel10;
+  private javax.swing.JLabel jLabel2;
+  private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
-  private javax.swing.JPanel jPanel2;
   private javax.swing.JSeparator jSeparator2;
-  private javax.swing.JPanel panelEventos;
+  private javax.swing.JPanel panelEditarPerfil;
+  private javax.swing.JPanel panelImagenFondo;
+  private javax.swing.JTextField telefono;
   // End of variables declaration//GEN-END:variables
 }
