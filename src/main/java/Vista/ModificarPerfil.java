@@ -28,18 +28,24 @@ public class ModificarPerfil extends javax.swing.JPanel {
   private void initComponents() {
 
     jSeparator2 = new javax.swing.JSeparator();
+    jLabel7 = new javax.swing.JLabel();
     jLabel8 = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
-    jLabel10 = new javax.swing.JLabel();
-    panelImagenFondo = new javax.swing.JPanel();
     editarNombre = new javax.swing.JTextField();
     editarCorreo = new javax.swing.JTextField();
     telefono = new javax.swing.JTextField();
     ciudad = new javax.swing.JTextField();
+    EditarCambios = new javax.swing.JButton();
+    jLabel3 = new javax.swing.JLabel();
     editarDescripcion = new javax.swing.JTextField();
+    jLabel10 = new javax.swing.JLabel();
+    jLabel11 = new javax.swing.JLabel();
+    jLabel6 = new javax.swing.JLabel();
+    jLabel4 = new javax.swing.JLabel();
+    jLabel5 = new javax.swing.JLabel();
+    panelImagenFondo = new javax.swing.JPanel();
     panelEditarPerfil = new javax.swing.JPanel();
-    jLabel7 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -47,6 +53,9 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jSeparator2.setBackground(new java.awt.Color(196, 205, 213));
     jSeparator2.setForeground(new java.awt.Color(196, 205, 213));
     add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 59, 1090, 10));
+
+    jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 316, -1, -1));
 
     jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
     jLabel8.setForeground(new java.awt.Color(159, 255, 0));
@@ -58,24 +67,6 @@ public class ModificarPerfil extends javax.swing.JPanel {
 
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirFoto.png"))); // NOI18N
     add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 218, 124, 124));
-
-    jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
-    add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, 40, 40));
-
-    panelImagenFondo.setBackground(new java.awt.Color(50, 49, 49));
-
-    javax.swing.GroupLayout panelImagenFondoLayout = new javax.swing.GroupLayout(panelImagenFondo);
-    panelImagenFondo.setLayout(panelImagenFondoLayout);
-    panelImagenFondoLayout.setHorizontalGroup(
-      panelImagenFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 800, Short.MAX_VALUE)
-    );
-    panelImagenFondoLayout.setVerticalGroup(
-      panelImagenFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-      .addGap(0, 174, Short.MAX_VALUE)
-    );
-
-    add(panelImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 90, 800, 174));
 
     editarNombre.setBackground(new java.awt.Color(51, 51, 51));
     editarNombre.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
@@ -97,17 +88,51 @@ public class ModificarPerfil extends javax.swing.JPanel {
     ciudad.setForeground(new java.awt.Color(145, 158, 171));
     add(ciudad, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 540, 253, 41));
 
+    EditarCambios.setBackground(new java.awt.Color(159, 255, 0));
+    EditarCambios.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
+    EditarCambios.setForeground(new java.awt.Color(0, 0, 0));
+    EditarCambios.setText("Guardar Cambios");
+    add(EditarCambios, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 670, 153, 31));
+
+    jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel3.setText("Nombre de usuario");
+    add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 375, 150, 24));
+
     editarDescripcion.setBackground(new java.awt.Color(51, 51, 51));
     editarDescripcion.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     editarDescripcion.setForeground(new java.awt.Color(145, 158, 171));
     add(editarDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 612, 257, 115));
 
+    jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(923, 247, -1, -1));
+
+    jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel11.setText("Email");
+    add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 432, 150, 24));
+
+    jLabel6.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel6.setText("Teléfono");
+    add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 488, 150, 24));
+
+    jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel4.setText("Ciudad");
+    add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 544, 150, 24));
+
+    jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel5.setText("Descripción");
+    add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(189, 658, 150, 24));
+
+    panelImagenFondo.setBackground(new java.awt.Color(50, 49, 49));
+    panelImagenFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(panelImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 90, 800, 174));
+
     panelEditarPerfil.setBackground(new java.awt.Color(75, 76, 73));
     panelEditarPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
-    panelEditarPerfil.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, -1, -1));
-
     add(panelEditarPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 85, 803, 660));
 
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/marcoFlores.jpeg"))); // NOI18N
@@ -115,13 +140,19 @@ public class ModificarPerfil extends javax.swing.JPanel {
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JButton EditarCambios;
   private javax.swing.JTextField ciudad;
   private javax.swing.JTextField editarCorreo;
   private javax.swing.JTextField editarDescripcion;
   private javax.swing.JTextField editarNombre;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel10;
+  private javax.swing.JLabel jLabel11;
   private javax.swing.JLabel jLabel2;
+  private javax.swing.JLabel jLabel3;
+  private javax.swing.JLabel jLabel4;
+  private javax.swing.JLabel jLabel5;
+  private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;

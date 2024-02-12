@@ -34,7 +34,7 @@ public class CrearEvento extends javax.swing.JPanel {
     jSeparator2 = new javax.swing.JSeparator();
     jLabel2 = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
-    jButton1 = new javax.swing.JButton();
+    crearEvento = new javax.swing.JButton();
     jLabel5 = new javax.swing.JLabel();
     jLabel4 = new javax.swing.JLabel();
     jLabel7 = new javax.swing.JLabel();
@@ -78,11 +78,11 @@ public class CrearEvento extends javax.swing.JPanel {
     jLabel3.setText("Crea tu propio evento y conoce personas con los mismos gustos con los que disfrutar de actividades multiples ¡Anímate!");
     add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 148, 757, 25));
 
-    jButton1.setBackground(new java.awt.Color(159, 255, 0));
-    jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
-    jButton1.setForeground(new java.awt.Color(0, 0, 0));
-    jButton1.setText("Crear Evento");
-    add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 688, 170, 34));
+    crearEvento.setBackground(new java.awt.Color(159, 255, 0));
+    crearEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    crearEvento.setForeground(new java.awt.Color(0, 0, 0));
+    crearEvento.setText("Crear Evento");
+    add(crearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 688, 170, 34));
 
     jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
     jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -117,8 +117,8 @@ public class CrearEvento extends javax.swing.JPanel {
   }// </editor-fold>//GEN-END:initComponents
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JButton crearEvento;
   private javax.swing.JTextField descripcionEvento;
-  private javax.swing.JButton jButton1;
   private javax.swing.JComboBox<String> jComboBox1;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
