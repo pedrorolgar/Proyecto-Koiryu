@@ -20,12 +20,14 @@ public class Bienvenida extends javax.swing.JFrame {
   /**
    * Creates new form Bienvenida
    */
+  DescubrirCitas descubrir = new DescubrirCitas();
+  cBienvenida Controlador = new cBienvenida(this);
+
   public Bienvenida() {
     setVisible(true);
     FlatIntelliJLaf.setup();
     FlatLightLaf.setup();
     initComponents();
-    cBienvenida Controlador = new cBienvenida(this);
     Controlador.actualizarEstilos();
 
   }
@@ -39,23 +41,25 @@ public class Bienvenida extends javax.swing.JFrame {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
+    frame = new javax.swing.JPanel();
+    panelAbsoluto = new javax.swing.JPanel();
     jPanel3 = new javax.swing.JPanel();
     jLabel1 = new javax.swing.JLabel();
     jLabel5 = new javax.swing.JLabel();
     jLabel6 = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
-    jLabel4 = new javax.swing.JLabel();
+    SalirPagina = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
     jPanel1 = new javax.swing.JPanel();
-    jLabel12 = new javax.swing.JLabel();
+    VistaArte = new javax.swing.JLabel();
     jLabel16 = new javax.swing.JLabel();
     jLabel17 = new javax.swing.JLabel();
-    jLabel25 = new javax.swing.JLabel();
-    jLabel26 = new javax.swing.JLabel();
+    VistaInicio = new javax.swing.JLabel();
+    VistaNaturaleza = new javax.swing.JLabel();
     jLabel29 = new javax.swing.JLabel();
-    jLabel30 = new javax.swing.JLabel();
-    jLabel31 = new javax.swing.JLabel();
-    jLabel32 = new javax.swing.JLabel();
+    VistaFestivales = new javax.swing.JLabel();
+    VistaDescubrir = new javax.swing.JLabel();
+    CrearEvento = new javax.swing.JLabel();
     jLabel33 = new javax.swing.JLabel();
     jLabel34 = new javax.swing.JLabel();
     jLabel35 = new javax.swing.JLabel();
@@ -67,15 +71,25 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel41 = new javax.swing.JLabel();
     jLabel42 = new javax.swing.JLabel();
     jLabel43 = new javax.swing.JLabel();
-    jLabel7 = new javax.swing.JLabel();
+    irUsuario = new javax.swing.JLabel();
     jLabel8 = new javax.swing.JLabel();
     jPanel2 = new javax.swing.JPanel();
     searchTf = new javax.swing.JTextField();
-    panelAbsoluto = new javax.swing.JPanel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     setBackground(new java.awt.Color(53, 49, 48));
     getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    frame.setBackground(new java.awt.Color(53, 49, 48));
+    frame.setOpaque(false);
+    frame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    panelAbsoluto.setBackground(new java.awt.Color(53, 49, 48));
+    panelAbsoluto.setOpaque(false);
+    panelAbsoluto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    frame.add(panelAbsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
+
+    getContentPane().add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 2300, 800));
 
     jPanel3.setBackground(new java.awt.Color(75, 76, 73));
     jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -99,9 +113,9 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen hojas 1.png"))); // NOI18N
     getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 67, 1143, 429));
 
-    jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Open Door.png"))); // NOI18N
-    jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 18, 30, 30));
+    SalirPagina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Open Door.png"))); // NOI18N
+    SalirPagina.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    getContentPane().add(SalirPagina, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 18, 30, 30));
 
     jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconoKoiryu_Blanco_sin_fondo_pequeña 1.png"))); // NOI18N
     getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1348, 13, 40, 40));
@@ -109,10 +123,11 @@ public class Bienvenida extends javax.swing.JFrame {
     jPanel1.setBackground(new java.awt.Color(51, 51, 51));
     jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jLabel12.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel12.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel12.setText("Arte");
-    jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 50, 18));
+    VistaArte.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    VistaArte.setForeground(new java.awt.Color(145, 158, 171));
+    VistaArte.setText("Arte");
+    VistaArte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jPanel1.add(VistaArte, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 50, 18));
 
     jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
     jLabel16.setForeground(new java.awt.Color(99, 115, 129));
@@ -124,35 +139,44 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel17.setText("Koiryu");
     jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 24, 90, 31));
 
-    jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel25.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel25.setText("Home");
-    jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 50, 18));
+    VistaInicio.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    VistaInicio.setForeground(new java.awt.Color(145, 158, 171));
+    VistaInicio.setText("Home");
+    VistaInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jPanel1.add(VistaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 50, 18));
 
-    jLabel26.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel26.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel26.setText("Naturaleza");
-    jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 246, 80, 18));
+    VistaNaturaleza.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    VistaNaturaleza.setForeground(new java.awt.Color(145, 158, 171));
+    VistaNaturaleza.setText("Naturaleza");
+    VistaNaturaleza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jPanel1.add(VistaNaturaleza, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 246, 80, 18));
 
     jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     jLabel29.setForeground(new java.awt.Color(145, 158, 171));
     jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 588.png"))); // NOI18N
     jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 220, 20, 18));
 
-    jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel30.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel30.setText("Festivales");
-    jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 194, 80, -1));
+    VistaFestivales.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    VistaFestivales.setForeground(new java.awt.Color(145, 158, 171));
+    VistaFestivales.setText("Festivales");
+    jPanel1.add(VistaFestivales, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 194, 80, -1));
 
-    jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel31.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel31.setText("Descubrir");
-    jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 370, 80, 18));
+    VistaDescubrir.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    VistaDescubrir.setForeground(new java.awt.Color(145, 158, 171));
+    VistaDescubrir.setText("Descubrir");
+    VistaDescubrir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    VistaDescubrir.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        VistaDescubrirMouseClicked(evt);
+      }
+    });
+    jPanel1.add(VistaDescubrir, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 370, 80, 18));
 
-    jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel32.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel32.setText("Crear Evento");
-    jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 280, 110, 18));
+    CrearEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    CrearEvento.setForeground(new java.awt.Color(145, 158, 171));
+    CrearEvento.setText("Crear Evento");
+    CrearEvento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jPanel1.add(CrearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 280, 110, 18));
 
     jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     jLabel33.setForeground(new java.awt.Color(145, 158, 171));
@@ -209,10 +233,11 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/chevron-down (1).png"))); // NOI18N
     jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 160, 16, 16));
 
-    jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
-    jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel7.setText("Usuario");
-    jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 810, -1, 22));
+    irUsuario.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    irUsuario.setForeground(new java.awt.Color(255, 255, 255));
+    irUsuario.setText("Usuario");
+    irUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jPanel1.add(irUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 810, -1, 22));
 
     jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/profile.png"))); // NOI18N
     jLabel8.setText("jLabel8");
@@ -229,12 +254,13 @@ public class Bienvenida extends javax.swing.JFrame {
 
     getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 1144, 66));
 
-    panelAbsoluto.setBackground(new java.awt.Color(53, 49, 48));
-    panelAbsoluto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-    getContentPane().add(panelAbsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 65, 1150, 800));
-
     pack();
   }// </editor-fold>//GEN-END:initComponents
+
+  private void VistaDescubrirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaDescubrirMouseClicked
+    // TODO add your handling code here:
+    Controlador.mostrarpanel(new DescubrirCitas());
+  }//GEN-LAST:event_VistaDescubrirMouseClicked
 
   /**
    * Main.
@@ -274,18 +300,21 @@ public class Bienvenida extends javax.swing.JFrame {
   }
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JLabel CrearEvento;
+  private javax.swing.JLabel SalirPagina;
+  private javax.swing.JLabel VistaArte;
+  private javax.swing.JLabel VistaDescubrir;
+  private javax.swing.JLabel VistaFestivales;
+  private javax.swing.JLabel VistaInicio;
+  private javax.swing.JLabel VistaNaturaleza;
+  private javax.swing.JPanel frame;
+  private javax.swing.JLabel irUsuario;
   private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel12;
   private javax.swing.JLabel jLabel16;
   private javax.swing.JLabel jLabel17;
   private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel25;
-  private javax.swing.JLabel jLabel26;
   private javax.swing.JLabel jLabel29;
   private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel30;
-  private javax.swing.JLabel jLabel31;
-  private javax.swing.JLabel jLabel32;
   private javax.swing.JLabel jLabel33;
   private javax.swing.JLabel jLabel34;
   private javax.swing.JLabel jLabel35;
@@ -293,14 +322,12 @@ public class Bienvenida extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel37;
   private javax.swing.JLabel jLabel38;
   private javax.swing.JLabel jLabel39;
-  private javax.swing.JLabel jLabel4;
   private javax.swing.JLabel jLabel40;
   private javax.swing.JLabel jLabel41;
   private javax.swing.JLabel jLabel42;
   private javax.swing.JLabel jLabel43;
   private javax.swing.JLabel jLabel5;
   private javax.swing.JLabel jLabel6;
-  private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JPanel jPanel1;
   private javax.swing.JPanel jPanel2;

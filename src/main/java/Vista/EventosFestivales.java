@@ -36,6 +36,7 @@ public class EventosFestivales extends javax.swing.JPanel {
     jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
     jLabel8.setForeground(new java.awt.Color(159, 255, 0));
     jLabel8.setText("Volver al Inicio");
+    jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
 
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N

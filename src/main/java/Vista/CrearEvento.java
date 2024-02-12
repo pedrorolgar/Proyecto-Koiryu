@@ -4,17 +4,30 @@
  */
 package Vista;
 
+import Controlador.cCrearEvento;
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.formdev.flatlaf.FlatLightLaf;
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  *
  * @author Pedro Rollán García
  */
+@Getter
+@Setter
 public class CrearEvento extends javax.swing.JPanel {
 
   /**
    * Creates new form CrearEvento
    */
   public CrearEvento() {
+    setVisible(true);
+    FlatIntelliJLaf.setup();
+    FlatLightLaf.setup();
     initComponents();
+    cCrearEvento Controlador = new cCrearEvento(this);
+    Controlador.actualizarEstilos();
   }
 
   /**
@@ -58,6 +71,11 @@ public class CrearEvento extends javax.swing.JPanel {
     nombreEvento1.setBackground(new java.awt.Color(51, 51, 51));
     nombreEvento1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     nombreEvento1.setForeground(new java.awt.Color(145, 158, 171));
+    nombreEvento1.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        nombreEvento1ActionPerformed(evt);
+      }
+    });
     add(nombreEvento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 365, 491, 41));
 
     jComboBox1.setBackground(new java.awt.Color(51, 51, 51));
@@ -115,6 +133,10 @@ public class CrearEvento extends javax.swing.JPanel {
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/aurora.jpg"))); // NOI18N
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
+
+  private void nombreEvento1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEvento1ActionPerformed
+    // TODO add your handling code here:
+  }//GEN-LAST:event_nombreEvento1ActionPerformed
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton crearEvento;

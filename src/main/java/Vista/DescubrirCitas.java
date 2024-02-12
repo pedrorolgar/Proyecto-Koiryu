@@ -49,18 +49,22 @@ public class DescubrirCitas extends javax.swing.JPanel {
     add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 16, 34, 38));
 
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 959.png"))); // NOI18N
+    jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(261, 382, 40, 40));
 
     jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 960.png"))); // NOI18N
+    jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(843, 390, -1, 40));
 
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirFotoMuyGrande.png"))); // NOI18N
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(447, 128, 250, 250));
 
     jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 957.png"))); // NOI18N
+    jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(502, 477, 60, 60));
 
     jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 958.png"))); // NOI18N
+    jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 477, 60, 60));
 
     jPanel1.setBackground(new java.awt.Color(255, 204, 204));
