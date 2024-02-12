@@ -89,7 +89,7 @@ public class Bienvenida extends javax.swing.JFrame {
     panelAbsoluto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
     frame.add(panelAbsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
 
-    getContentPane().add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, 2300, 800));
+    getContentPane().add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 66, 1150, 800));
 
     jPanel3.setBackground(new java.awt.Color(75, 76, 73));
     jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -127,6 +127,11 @@ public class Bienvenida extends javax.swing.JFrame {
     VistaArte.setForeground(new java.awt.Color(145, 158, 171));
     VistaArte.setText("Arte");
     VistaArte.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    VistaArte.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        VistaArteMouseClicked(evt);
+      }
+    });
     jPanel1.add(VistaArte, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 50, 18));
 
     jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
@@ -143,12 +148,22 @@ public class Bienvenida extends javax.swing.JFrame {
     VistaInicio.setForeground(new java.awt.Color(145, 158, 171));
     VistaInicio.setText("Home");
     VistaInicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    VistaInicio.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        VistaInicioMouseClicked(evt);
+      }
+    });
     jPanel1.add(VistaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 50, 18));
 
     VistaNaturaleza.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     VistaNaturaleza.setForeground(new java.awt.Color(145, 158, 171));
     VistaNaturaleza.setText("Naturaleza");
     VistaNaturaleza.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    VistaNaturaleza.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        VistaNaturalezaMouseClicked(evt);
+      }
+    });
     jPanel1.add(VistaNaturaleza, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 246, 80, 18));
 
     jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
@@ -159,6 +174,12 @@ public class Bienvenida extends javax.swing.JFrame {
     VistaFestivales.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
     VistaFestivales.setForeground(new java.awt.Color(145, 158, 171));
     VistaFestivales.setText("Festivales");
+    VistaFestivales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    VistaFestivales.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        VistaFestivalesMouseClicked(evt);
+      }
+    });
     jPanel1.add(VistaFestivales, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 194, 80, -1));
 
     VistaDescubrir.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
@@ -176,6 +197,11 @@ public class Bienvenida extends javax.swing.JFrame {
     CrearEvento.setForeground(new java.awt.Color(145, 158, 171));
     CrearEvento.setText("Crear Evento");
     CrearEvento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    CrearEvento.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        CrearEventoMouseClicked(evt);
+      }
+    });
     jPanel1.add(CrearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 280, 110, 18));
 
     jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
@@ -237,6 +263,11 @@ public class Bienvenida extends javax.swing.JFrame {
     irUsuario.setForeground(new java.awt.Color(255, 255, 255));
     irUsuario.setText("Usuario");
     irUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    irUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        irUsuarioMouseClicked(evt);
+      }
+    });
     jPanel1.add(irUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(74, 810, -1, 22));
 
     jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/profile.png"))); // NOI18N
@@ -259,8 +290,46 @@ public class Bienvenida extends javax.swing.JFrame {
 
   private void VistaDescubrirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaDescubrirMouseClicked
     // TODO add your handling code here:
+    frame.setVisible(true);
     Controlador.mostrarpanel(new DescubrirCitas());
   }//GEN-LAST:event_VistaDescubrirMouseClicked
+
+  private void VistaNaturalezaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaNaturalezaMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    Controlador.mostrarpanel(new EventosNaturaleza());
+  }//GEN-LAST:event_VistaNaturalezaMouseClicked
+
+  private void VistaArteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaArteMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    Controlador.mostrarpanel(new EventosArte());
+  }//GEN-LAST:event_VistaArteMouseClicked
+
+  private void VistaFestivalesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaFestivalesMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    Controlador.mostrarpanel(new EventosFestivales());
+  }//GEN-LAST:event_VistaFestivalesMouseClicked
+
+  private void CrearEventoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CrearEventoMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    Controlador.mostrarpanel(new CrearEvento());
+  }//GEN-LAST:event_CrearEventoMouseClicked
+
+  private void irUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_irUsuarioMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    Controlador.mostrarpanel(new MiPerfil());
+  }//GEN-LAST:event_irUsuarioMouseClicked
+
+  private void VistaInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VistaInicioMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(false);
+    setVisible(true);
+    repaint();
+  }//GEN-LAST:event_VistaInicioMouseClicked
 
   /**
    * Main.

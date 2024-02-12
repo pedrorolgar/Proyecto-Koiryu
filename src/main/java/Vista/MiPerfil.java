@@ -104,12 +104,14 @@ public class MiPerfil extends javax.swing.JPanel {
     EditarPerfilBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
     EditarPerfilBtn.setForeground(new java.awt.Color(255, 255, 255));
     EditarPerfilBtn.setText("Editar Perfil");
+    EditarPerfilBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(EditarPerfilBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 354, 291, 42));
 
     misEventosBtn.setBackground(new java.awt.Color(122, 137, 159));
     misEventosBtn.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
     misEventosBtn.setForeground(new java.awt.Color(255, 255, 255));
     misEventosBtn.setText("Mis Eventos");
+    misEventosBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(misEventosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 354, 291, 42));
   }// </editor-fold>//GEN-END:initComponents
 

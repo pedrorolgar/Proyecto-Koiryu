@@ -100,6 +100,7 @@ public class CrearEvento extends javax.swing.JPanel {
     crearEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
     crearEvento.setForeground(new java.awt.Color(0, 0, 0));
     crearEvento.setText("Crear Evento");
+    crearEvento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(crearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 688, 170, 34));
 
     jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -113,6 +114,7 @@ public class CrearEvento extends javax.swing.JPanel {
     add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 375, 150, 24));
 
     jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, 40, 40));
 
     jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconoEvento.png"))); // NOI18N
@@ -121,9 +123,21 @@ public class CrearEvento extends javax.swing.JPanel {
     jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
     jLabel8.setForeground(new java.awt.Color(159, 255, 0));
     jLabel8.setText("Volver al Inicio");
+    jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel8MouseClicked(evt);
+      }
+    });
     add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
 
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N
+    jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel9MouseClicked(evt);
+      }
+    });
     add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 16, 34, 38));
 
     panelEventos.setBackground(new java.awt.Color(75, 76, 73));
@@ -137,6 +151,16 @@ public class CrearEvento extends javax.swing.JPanel {
   private void nombreEvento1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreEvento1ActionPerformed
     // TODO add your handling code here:
   }//GEN-LAST:event_nombreEvento1ActionPerformed
+
+  private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    setVisible(false);
+    // TODO add your handling code here:
+  }//GEN-LAST:event_jLabel8MouseClicked
+
+  private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    setVisible(false);
+    // TODO add your handling code here:
+  }//GEN-LAST:event_jLabel9MouseClicked
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton crearEvento;

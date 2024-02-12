@@ -55,14 +55,27 @@ public class ModificarPerfil extends javax.swing.JPanel {
     add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 59, 1090, 10));
 
     jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 316, -1, -1));
 
     jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
     jLabel8.setForeground(new java.awt.Color(159, 255, 0));
     jLabel8.setText("Volver al Inicio");
+    jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel8MouseClicked(evt);
+      }
+    });
     add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
 
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N
+    jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel9MouseClicked(evt);
+      }
+    });
     add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 16, 34, 38));
 
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirFoto.png"))); // NOI18N
@@ -92,6 +105,7 @@ public class ModificarPerfil extends javax.swing.JPanel {
     EditarCambios.setFont(new java.awt.Font("Segoe UI", 0, 15)); // NOI18N
     EditarCambios.setForeground(new java.awt.Color(0, 0, 0));
     EditarCambios.setText("Guardar Cambios");
+    EditarCambios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(EditarCambios, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 670, 153, 31));
 
     jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -105,6 +119,7 @@ public class ModificarPerfil extends javax.swing.JPanel {
     add(editarDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(396, 612, 257, 115));
 
     jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
+    jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(923, 247, -1, -1));
 
     jLabel11.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -138,6 +153,17 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/marcoFlores.jpeg"))); // NOI18N
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
+
+  private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    setVisible(false);
+    // TODO add your handling code here:
+  }//GEN-LAST:event_jLabel9MouseClicked
+
+  private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    // TODO add your handling code here:
+    setVisible(false);
+
+  }//GEN-LAST:event_jLabel8MouseClicked
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarCambios;

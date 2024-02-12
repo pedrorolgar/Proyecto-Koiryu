@@ -38,7 +38,7 @@ public class cBienvenida {
     p.setLocation(0, 0);
 
     Vista.getFrame().removeAll();
-    Vista.getFrame().add(p, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+    Vista.getFrame().add(p, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
     Vista.getFrame().revalidate();
     Vista.getFrame().repaint();
   }

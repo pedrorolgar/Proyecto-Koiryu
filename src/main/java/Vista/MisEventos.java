@@ -53,6 +53,7 @@ public class MisEventos extends javax.swing.JPanel {
     jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
     jButton1.setForeground(new java.awt.Color(0, 0, 0));
     jButton1.setText("Crear Evento");
+    jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(902, 29, 160, 45));
 
     jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N

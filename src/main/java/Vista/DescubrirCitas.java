@@ -43,9 +43,21 @@ public class DescubrirCitas extends javax.swing.JPanel {
     jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
     jLabel8.setForeground(new java.awt.Color(159, 255, 0));
     jLabel8.setText("Volver al Inicio");
+    jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel8MouseClicked(evt);
+      }
+    });
     add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
 
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N
+    jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        jLabel9MouseClicked(evt);
+      }
+    });
     add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 16, 34, 38));
 
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 959.png"))); // NOI18N
@@ -63,6 +75,7 @@ public class DescubrirCitas extends javax.swing.JPanel {
     jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(502, 477, 60, 60));
 
+    jLabel4.setBackground(new java.awt.Color(53, 49, 48));
     jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Frame 958.png"))); // NOI18N
     jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 477, 60, 60));
@@ -82,6 +95,18 @@ public class DescubrirCitas extends javax.swing.JPanel {
 
     add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 59, 502, 696));
   }// </editor-fold>//GEN-END:initComponents
+
+  private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+    setVisible(false);
+
+    // TODO add your handling code here:
+  }//GEN-LAST:event_jLabel9MouseClicked
+
+  private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+    // TODO add your handling code here:
+    setVisible(false);
+
+  }//GEN-LAST:event_jLabel8MouseClicked
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel jLabel1;
