@@ -7,6 +7,9 @@ package Vista;
 import java.util.ResourceBundle;
 
 /**
+ * Panel para descubrir citas.
+ * Este panel proporciona la interfaz gráfica para que los usuarios puedan descubrir citas disponibles.
+ * Permite ver información sobre las citas y realizar acciones como agregar fotos, agregar citas, etc.
  *
  * @author Pedro Rollán García
  */
@@ -14,6 +17,8 @@ public class DescubrirCitas extends javax.swing.JPanel {
 
   /**
    * Creates new form DescubrirCitas
+   * Constructor de la clase DescubrirCitas.
+   * Crea una nueva instancia de DescubrirCitas e inicializa los componentes.
    */
   public DescubrirCitas() {
     initComponents();
