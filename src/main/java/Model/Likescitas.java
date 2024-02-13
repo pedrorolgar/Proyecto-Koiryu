@@ -1,5 +1,9 @@
 package Model;
 
+/**
+ *
+ * @author Pedro Rollán
+ */
 import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,11 +23,11 @@ public class Likescitas implements java.io.Serializable {
   private Integer likeCitaId;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "UsuarioID",referencedColumnName = "UserID", nullable = false)
+  @JoinColumn(name = "UsuarioID", referencedColumnName = "UserID", nullable = false)
   private Usuarios usuarios;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "CitaID",referencedColumnName = "CitaID", nullable = false)
+  @JoinColumn(name = "CitaID", referencedColumnName = "CitaID", nullable = false)
   private Citas citas;
 
   /**

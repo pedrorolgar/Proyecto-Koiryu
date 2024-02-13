@@ -1,5 +1,9 @@
 package Model;
 
+/**
+ *
+ * @author Pedro Rollán
+ */
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;

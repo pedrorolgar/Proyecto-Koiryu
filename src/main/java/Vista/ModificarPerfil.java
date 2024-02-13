@@ -4,19 +4,31 @@
  */
 package Vista;
 
+import Controlador.cModificarPerfil;
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.formdev.flatlaf.FlatLightLaf;
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
+import lombok.Getter;
 
 /**
  *
  * @author Pedro Rollán García
  */
+@Getter
 public class ModificarPerfil extends javax.swing.JPanel {
 
   /**
    * Creates new form ModificarPerfil
    */
+  cModificarPerfil Controlador = new cModificarPerfil(this);
+
   public ModificarPerfil() {
+    setVisible(true);
+    FlatIntelliJLaf.setup();
+    FlatLightLaf.setup();
     initComponents();
+    Controlador.actualizarEstilos();
   }
 
   /**
@@ -110,6 +122,11 @@ public class ModificarPerfil extends javax.swing.JPanel {
     EditarCambios.setForeground(new java.awt.Color(0, 0, 0));
     EditarCambios.setText("Guardar Cambios");
     EditarCambios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    EditarCambios.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        EditarCambiosMouseClicked(evt);
+      }
+    });
     add(EditarCambios, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 670, 153, 31));
 
     jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -211,6 +228,11 @@ public class ModificarPerfil extends javax.swing.JPanel {
     EditarCambios.setText(idioma.getString("ModificarPerfil.saveChanges"));
     jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
   }//GEN-LAST:event_InglesMouseClicked
+
+  private void EditarCambiosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditarCambiosMouseClicked
+    // TODO add your handling code here:
+    JOptionPane.showMessageDialog(null, "Esta función aún no está implementada", "Modificar perfil", JOptionPane.WARNING_MESSAGE);
+  }//GEN-LAST:event_EditarCambiosMouseClicked
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarCambios;

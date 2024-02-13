@@ -41,6 +41,64 @@ public class MisEventos extends javax.swing.JPanel {
     jPanel1 = new javax.swing.JPanel();
     Español1 = new javax.swing.JLabel();
     Ingles = new javax.swing.JLabel();
+    jLabel2 = new javax.swing.JLabel();
+    jLabel11 = new javax.swing.JLabel();
+    jLabel12 = new javax.swing.JLabel();
+    jLabel13 = new javax.swing.JLabel();
+    jLabel14 = new javax.swing.JLabel();
+    jLabel15 = new javax.swing.JLabel();
+    jPanel2 = new javax.swing.JPanel();
+    jLabel20 = new javax.swing.JLabel();
+    jLabel21 = new javax.swing.JLabel();
+    jPanel3 = new javax.swing.JPanel();
+    jLabel18 = new javax.swing.JLabel();
+    jLabel16 = new javax.swing.JLabel();
+    jLabel17 = new javax.swing.JLabel();
+    jLabel19 = new javax.swing.JLabel();
+    jLabel22 = new javax.swing.JLabel();
+    jLabel23 = new javax.swing.JLabel();
+    jLabel26 = new javax.swing.JLabel();
+    jLabel27 = new javax.swing.JLabel();
+    jPanel4 = new javax.swing.JPanel();
+    jLabel25 = new javax.swing.JLabel();
+    jLabel24 = new javax.swing.JLabel();
+    jLabel33 = new javax.swing.JLabel();
+    jPanel5 = new javax.swing.JPanel();
+    jLabel32 = new javax.swing.JLabel();
+    jLabel31 = new javax.swing.JLabel();
+    jLabel30 = new javax.swing.JLabel();
+    jLabel29 = new javax.swing.JLabel();
+    jLabel28 = new javax.swing.JLabel();
+    jLabel39 = new javax.swing.JLabel();
+    jPanel6 = new javax.swing.JPanel();
+    jLabel35 = new javax.swing.JLabel();
+    jLabel34 = new javax.swing.JLabel();
+    jLabel36 = new javax.swing.JLabel();
+    jLabel37 = new javax.swing.JLabel();
+    jLabel38 = new javax.swing.JLabel();
+    jLabel45 = new javax.swing.JLabel();
+    jPanel7 = new javax.swing.JPanel();
+    jLabel44 = new javax.swing.JLabel();
+    jLabel43 = new javax.swing.JLabel();
+    jLabel42 = new javax.swing.JLabel();
+    jLabel41 = new javax.swing.JLabel();
+    jLabel40 = new javax.swing.JLabel();
+    jLabel51 = new javax.swing.JLabel();
+    jPanel8 = new javax.swing.JPanel();
+    jLabel50 = new javax.swing.JLabel();
+    jLabel48 = new javax.swing.JLabel();
+    jLabel47 = new javax.swing.JLabel();
+    jLabel58 = new javax.swing.JLabel();
+    jLabel59 = new javax.swing.JLabel();
+    jLabel57 = new javax.swing.JLabel();
+    jPanel9 = new javax.swing.JPanel();
+    jLabel56 = new javax.swing.JLabel();
+    jLabel54 = new javax.swing.JLabel();
+    jLabel53 = new javax.swing.JLabel();
+    jLabel46 = new javax.swing.JLabel();
+    jLabel49 = new javax.swing.JLabel();
+    jLabel52 = new javax.swing.JLabel();
+    jLabel55 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -102,18 +160,249 @@ public class MisEventos extends javax.swing.JPanel {
     });
     jPanel1.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 10, -1, -1));
 
+    jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Image & bg.png"))); // NOI18N
+    jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 131, 36, 36));
+
+    jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1009, 147, 16, 4));
+
+    jLabel12.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel12.setText("Festival de Música EDM");
+    jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 137, 300, -1));
+
+    jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button.png"))); // NOI18N
+    jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(848, 134, 102, 32));
+
+    jLabel14.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel14.setText("Usuario");
+    jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(659, 137, -1, -1));
+
+    jLabel15.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel15.setText("Coachella");
+    jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 139, 200, -1));
+
+    jPanel2.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 113, 1023, 72));
+
+    jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Button (1).png"))); // NOI18N
+    jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 220, 102, 32));
+
+    jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 230, 16, 4));
+
+    jPanel3.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel18.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel18.setText("Museo lleno de historia");
+    jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel16.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel16.setText("Museo del Prado");
+    jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img& bg.png"))); // NOI18N
+    jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, 36));
+
+    jLabel19.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel19.setText("Usuario");
+    jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 197, 1023, 72));
+
+    jLabel22.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel22.setText("Opakua");
+    jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 200, -1));
+
+    jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg.png"))); // NOI18N
+    jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 36, 36));
+
+    jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button (2).png"))); // NOI18N
+    jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 300, 102, 32));
+
+    jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 310, 16, 4));
+
+    jPanel4.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel25.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel25.setText("Usuario");
+    jPanel4.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jLabel24.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel24.setText("Un viaje a la naturaleza");
+    jPanel4.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 282, 1023, 72));
+
+    jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 390, 16, 4));
+
+    jPanel5.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button.png"))); // NOI18N
+    jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+    jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel31.setText("Usuario");
+    jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel30.setText("El mayor festival del mundo");
+    jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg (1).png"))); // NOI18N
+    jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, -1));
+
+    jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel28.setText("Tomorrowland");
+    jPanel5.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 366, 1023, 72));
+
+    jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 480, 16, 4));
+
+    jPanel6.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg (2).png"))); // NOI18N
+    jPanel6.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, -1));
+
+    jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel34.setText("Medusa");
+    jPanel6.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel36.setText("3 días de música sin parar");
+    jPanel6.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel37.setText("Usuario");
+    jPanel6.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button.png"))); // NOI18N
+    jPanel6.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+    jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 451, 1023, 72));
+
+    jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 560, 16, 4));
+
+    jPanel7.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Button (1).png"))); // NOI18N
+    jPanel7.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+    jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel43.setText("Usuario");
+    jPanel7.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jLabel42.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel42.setText("Historia de Salamanca");
+    jPanel7.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg (3).png"))); // NOI18N
+    jPanel7.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, -1));
+
+    jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel40.setText("Catedral de Salamanca");
+    jPanel7.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 535, 1023, 72));
+
+    jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 640, 16, 4));
+
+    jPanel8.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/button.png"))); // NOI18N
+    jPanel8.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+    jLabel48.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel48.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel48.setText("Los mejores paisajes");
+    jPanel8.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg (4).png"))); // NOI18N
+    jPanel8.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, -1));
+
+    jLabel58.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel58.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel58.setText("Pirineos");
+    jPanel8.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jLabel59.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel59.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel59.setText("Usuario");
+    jPanel8.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 620, 1023, 72));
+
+    jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menu.png"))); // NOI18N
+    jPanel1.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 720, 16, 4));
+
+    jPanel9.setBackground(new java.awt.Color(75, 76, 73));
+    jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Button (1).png"))); // NOI18N
+    jPanel9.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, -1, -1));
+
+    jLabel54.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel54.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel54.setText("gran teatro de Barcelona");
+    jPanel9.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 300, -1));
+
+    jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/img & bg (5).png"))); // NOI18N
+    jPanel9.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 36, -1));
+
+    jLabel46.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel46.setText("Liceo");
+    jPanel9.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 200, -1));
+
+    jLabel49.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel49.setText("Usuario");
+    jPanel9.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 30, -1, -1));
+
+    jPanel1.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 704, 1023, 72));
+
+    jLabel52.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel52.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel52.setText("Coachella");
+    jPanel1.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 710, 200, -1));
+
+    jLabel55.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    jLabel55.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel55.setText("Usuario");
+    jPanel1.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 710, -1, -1));
+
     add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
-
-  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
-    // TODO add your handling code here:
-    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
-    jLabel1.setText(idioma.getString("MisEventos.events"));
-    jLabel3.setText(idioma.getString("MisEventos.name"));
-    jLabel4.setText(idioma.getString("MisEventos.description"));
-    jLabel5.setText(idioma.getString("MisEventos.author"));
-    jLabel6.setText(idioma.getString("MisEventos.type"));
-  }//GEN-LAST:event_Español1MouseClicked
 
   private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
     // TODO add your handling code here:
@@ -125,18 +414,86 @@ public class MisEventos extends javax.swing.JPanel {
     jLabel6.setText(idioma.getString("MisEventos.type"));
   }//GEN-LAST:event_InglesMouseClicked
 
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    jLabel1.setText(idioma.getString("MisEventos.events"));
+    jLabel3.setText(idioma.getString("MisEventos.name"));
+    jLabel4.setText(idioma.getString("MisEventos.description"));
+    jLabel5.setText(idioma.getString("MisEventos.author"));
+    jLabel6.setText(idioma.getString("MisEventos.type"));
+  }//GEN-LAST:event_Español1MouseClicked
+
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel Español1;
   private javax.swing.JLabel Ingles;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel10;
+  private javax.swing.JLabel jLabel11;
+  private javax.swing.JLabel jLabel12;
+  private javax.swing.JLabel jLabel13;
+  private javax.swing.JLabel jLabel14;
+  private javax.swing.JLabel jLabel15;
+  private javax.swing.JLabel jLabel16;
+  private javax.swing.JLabel jLabel17;
+  private javax.swing.JLabel jLabel18;
+  private javax.swing.JLabel jLabel19;
+  private javax.swing.JLabel jLabel2;
+  private javax.swing.JLabel jLabel20;
+  private javax.swing.JLabel jLabel21;
+  private javax.swing.JLabel jLabel22;
+  private javax.swing.JLabel jLabel23;
+  private javax.swing.JLabel jLabel24;
+  private javax.swing.JLabel jLabel25;
+  private javax.swing.JLabel jLabel26;
+  private javax.swing.JLabel jLabel27;
+  private javax.swing.JLabel jLabel28;
+  private javax.swing.JLabel jLabel29;
   private javax.swing.JLabel jLabel3;
+  private javax.swing.JLabel jLabel30;
+  private javax.swing.JLabel jLabel31;
+  private javax.swing.JLabel jLabel32;
+  private javax.swing.JLabel jLabel33;
+  private javax.swing.JLabel jLabel34;
+  private javax.swing.JLabel jLabel35;
+  private javax.swing.JLabel jLabel36;
+  private javax.swing.JLabel jLabel37;
+  private javax.swing.JLabel jLabel38;
+  private javax.swing.JLabel jLabel39;
   private javax.swing.JLabel jLabel4;
+  private javax.swing.JLabel jLabel40;
+  private javax.swing.JLabel jLabel41;
+  private javax.swing.JLabel jLabel42;
+  private javax.swing.JLabel jLabel43;
+  private javax.swing.JLabel jLabel44;
+  private javax.swing.JLabel jLabel45;
+  private javax.swing.JLabel jLabel46;
+  private javax.swing.JLabel jLabel47;
+  private javax.swing.JLabel jLabel48;
+  private javax.swing.JLabel jLabel49;
   private javax.swing.JLabel jLabel5;
+  private javax.swing.JLabel jLabel50;
+  private javax.swing.JLabel jLabel51;
+  private javax.swing.JLabel jLabel52;
+  private javax.swing.JLabel jLabel53;
+  private javax.swing.JLabel jLabel54;
+  private javax.swing.JLabel jLabel55;
+  private javax.swing.JLabel jLabel56;
+  private javax.swing.JLabel jLabel57;
+  private javax.swing.JLabel jLabel58;
+  private javax.swing.JLabel jLabel59;
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
   private javax.swing.JPanel jPanel1;
+  private javax.swing.JPanel jPanel2;
+  private javax.swing.JPanel jPanel3;
+  private javax.swing.JPanel jPanel4;
+  private javax.swing.JPanel jPanel5;
+  private javax.swing.JPanel jPanel6;
+  private javax.swing.JPanel jPanel7;
+  private javax.swing.JPanel jPanel8;
+  private javax.swing.JPanel jPanel9;
   // End of variables declaration//GEN-END:variables
 }

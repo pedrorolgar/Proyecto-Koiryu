@@ -4,15 +4,25 @@
  */
 package Vista;
 
+/**
+ * Esta clase representa un panel para crear un evento.
+ * Proporciona la interfaz gráfica para que el usuario pueda ingresar información sobre el evento que desea crear.
+ * También permite cambiar el idioma entre español e inglés.
+ *
+ * @author Pedro Rollán
+ */
 import Controlador.cCrearEvento;
-import Model.Usuarios;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.util.ResourceBundle;
+import javax.swing.JOptionPane;
 import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * Panel para la creación de eventos.
+ * Permite al usuario introducir información sobre el evento que desea crear.
+ * Además, proporciona opciones para cambiar el idioma entre español e inglés.
  *
  * @author Pedro Rollán García
  */
@@ -21,10 +31,14 @@ import lombok.Setter;
 public class CrearEvento extends javax.swing.JPanel {
 
   /**
-   * Creates new form CrearEvento
+   * Controlador para la funcionalidad de creación de eventos.
    */
   private final cCrearEvento controladorCrearEvento;
 
+  /**
+   * Constructor de la clase CrearEvento.
+   * Crea una nueva instancia de CrearEvento, inicializa los componentes y aplica estilos.
+   */
   public CrearEvento() {
     setVisible(true);
     FlatIntelliJLaf.setup();
@@ -33,10 +47,6 @@ public class CrearEvento extends javax.swing.JPanel {
     controladorCrearEvento = new cCrearEvento(this);
     cCrearEvento Controlador = new cCrearEvento(this);
     Controlador.actualizarEstilos();
-
-  }
-
-  public void crearEventoUsu(Usuarios usuario) {
 
   }
 
@@ -222,6 +232,7 @@ public class CrearEvento extends javax.swing.JPanel {
 
   private void crearEventoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearEventoMouseClicked
     // TODO add your handling code here:
+    JOptionPane.showMessageDialog(null, "Est función aún no está implementada", "Crear Evento", JOptionPane.WARNING_MESSAGE);
   }//GEN-LAST:event_crearEventoMouseClicked
 
   // Variables declaration - do not modify//GEN-BEGIN:variables

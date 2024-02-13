@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controlador;
 
 import Vista.MiPerfil;
 import javax.swing.JPanel;
 
 /**
+ * Controlador para la vista de MiPerfil.
+ * Gestiona la lógica relacionada con la visualización de diferentes paneles en la vista de MiPerfil.
  *
  * @author Pedro Rollán García
  */
@@ -16,14 +14,19 @@ public class cMiPerfil {
   private final MiPerfil Vista;
 
   /**
-   * Instantiates a new C login.
+   * Constructor de la clase cMiPerfil.
    *
-   * @param Vista the vista
+   * @param Vista la vista de MiPerfil a controlar
    */
   public cMiPerfil(MiPerfil Vista) {
     this.Vista = Vista;
   }
 
+  /**
+   * Muestra un panel especificado en la vista de MiPerfil.
+   *
+   * @param p el panel a mostrar
+   */
   public void mostrarpanel(JPanel p) {
     p.setSize(1150, 800);
     p.setLocation(256, 0);

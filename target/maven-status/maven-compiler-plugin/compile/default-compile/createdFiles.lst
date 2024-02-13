@@ -3,6 +3,7 @@ Vista\Login$3.class
 Vista\EventosFestivales$4.class
 Model\Eventos.class
 Vista\EventosArte.class
+Controlador\cModificarPerfil.class
 Vista\Bienvenida$9.class
 Vista\EventosArte$1.class
 Vista\RecuperarContraseña$1.class
@@ -11,16 +12,19 @@ Vista\CrearEvento$5.class
 Controlador\cEventosArte.class
 Vista\EventosFestivales$1.class
 Vista\SignIn.class
+Vista\SignIn$5.class
 Vista\CrearEvento.class
 Controlador\cRecuperarContraseña.class
 Controlador\cSignIn$1.class
 Vista\SignIn$2.class
+Vista\RecuperarContraseña$4.class
 Vista\CrearEvento$2.class
 Vista\EventosNaturaleza$3.class
 Vista\MisEventos$1.class
 Vista\PantallaDeCarga$1.class
 Vista\MiPerfil$3.class
 Vista\DescubrirCitas$4.class
+Vista\RecuperarContraseña$3.class
 Vista\ModificarPerfil$1.class
 Vista\Bienvenida$4.class
 Vista\CrearEvento$3.class
@@ -36,6 +40,7 @@ Controlador\cLogin.class
 Vista\CrearEvento$4.class
 Vista\SignIn$1.class
 Vista\RecuperarContraseña$2.class
+Vista\Bienvenida$11.class
 Vista\CrearEvento$1.class
 Vista\Login.class
 Vista\Bienvenida$2.class
@@ -59,6 +64,7 @@ Vista\DescubrirCitas$1.class
 Vista\CrearEvento$6.class
 Vista\DescubrirCitas.class
 Controlador\cSignIn.class
+Vista\ModificarPerfil$5.class
 Vista\MiPerfil$1.class
 Model\Likeseventos.class
 Vista\ModificarPerfil.class
@@ -66,6 +72,7 @@ Vista\EventosArte$3.class
 Vista\EventosNaturaleza$2.class
 Model\Usuarios.class
 Vista\EventosNaturaleza$1.class
+Vista\Login$4.class
 Controlador\hibernateUtil.class
 Vista\ModificarPerfil$4.class
 Vista\DescubrirCitas$2.class
@@ -73,5 +80,6 @@ Vista\EventosFestivales$3.class
 Vista\EventosFestivales.class
 Vista\MisEventos$2.class
 Model\Participanteseventos.class
+Vista\SignIn$4.class
 Vista\EventosArte$4.class
 Vista\Bienvenida$7.class

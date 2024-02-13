@@ -1,6 +1,10 @@
 package Model;
 // Generated 12 ene 2024 22:06:41 by Hibernate Tools 6.3.1.Final
 
+/**
+ *
+ * @author Pedro Rollán
+ */
 import Controlador.hibernateUtil;
 import java.util.HashSet;
 import java.util.Set;
@@ -91,9 +95,10 @@ public class Usuarios implements java.io.Serializable {
    * Crear contraseña string.
    *
    * @param contrasena the contrasena
+   *
    * @return the string
    */
-  public static String crearContraseña(String contrasena){
+  public static String crearContraseña(String contrasena) {
     return BCrypt.hashpw(contrasena, BCrypt.gensalt(12));
   }
 
@@ -101,6 +106,7 @@ public class Usuarios implements java.io.Serializable {
    * Guardar usuarios boolean.
    *
    * @param usuario the usuario
+   *
    * @return the boolean
    */
   public static boolean guardarUsuarios(Usuarios usuario) {
@@ -124,7 +130,6 @@ public class Usuarios implements java.io.Serializable {
       }
     }
 
-
   }
 
   /**
@@ -132,6 +137,7 @@ public class Usuarios implements java.io.Serializable {
    *
    * @param password the password
    * @param usuario the usuario
+   *
    * @return the boolean
    */
   public static boolean comprobarContraseña(String password, Usuarios usuario) {
@@ -142,17 +148,18 @@ public class Usuarios implements java.io.Serializable {
    * Encontrar por nombre de usuario usuarios.
    *
    * @param Username the username
+   *
    * @return the usuarios
    */
   public static Usuarios encontrarPorNombreDeUsuario(String Username) {
     SessionFactory sessionFactory = hibernateUtil.buildSessionFactory();
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    try{
+    try {
       return session.createQuery("from Usuarios where nombreUsuario = :username", Usuarios.class).setParameter("username", Username).getSingleResult();
-    }catch(NoResultException e){
+    } catch (NoResultException e) {
       return null;
-    }finally{
+    } finally {
       session.close();
     }
   }
@@ -194,17 +201,18 @@ public class Usuarios implements java.io.Serializable {
    * Encontrar por correo usuarios.
    *
    * @param correo the correo
+   *
    * @return the usuarios
    */
   public static Usuarios encontrarPorCorreo(String correo) {
     SessionFactory sessionFactory = hibernateUtil.buildSessionFactory();
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    try{
+    try {
       return session.createQuery("from Usuarios where correoElectronico = :correo", Usuarios.class).setParameter("correo", correo).getSingleResult();
-    }catch(NoResultException e){
+    } catch (NoResultException e) {
       return null;
-    }finally{
+    } finally {
       session.close();
     }
   }
@@ -213,6 +221,7 @@ public class Usuarios implements java.io.Serializable {
    * Actualizar boolean.
    *
    * @param usuario the usuario
+   *
    * @return the boolean
    */
   public static boolean actualizar(Usuarios usuario) {

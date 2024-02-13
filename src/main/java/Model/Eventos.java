@@ -1,5 +1,9 @@
 package Model;
 
+/**
+ *
+ * @author Pedro Rollán
+ */
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.*;
@@ -23,7 +27,7 @@ public class Eventos implements java.io.Serializable {
   private Integer eventoId;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "CreadorID",referencedColumnName = "UserID", nullable = false)
+  @JoinColumn(name = "CreadorID", referencedColumnName = "UserID", nullable = false)
   private Usuarios usuarios;
 
   @Column(name = "NombreEvento", nullable = false)

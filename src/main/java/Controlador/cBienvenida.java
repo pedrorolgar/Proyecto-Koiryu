@@ -9,30 +9,38 @@ import com.formdev.flatlaf.extras.FlatSVGIcon;
 import javax.swing.JPanel;
 
 /**
+ * Controlador para la vista de Bienvenida.
+ * Gestiona la actualización de estilos y la visualización de paneles en la vista.
  *
- * @author Alumno
+ * @author Pedro Rollán
  */
 public class cBienvenida {
 
   private final Bienvenida Vista;
 
   /**
-   * Instantiates a new C login.
+   * Constructor de la clase cBienvenida.
    *
-   * @param Vista the vista
+   * @param Vista la vista de Bienvenida a controlar
    */
   public cBienvenida(Bienvenida Vista) {
     this.Vista = Vista;
   }
 
   /**
-   * Actualizar estilos.
+   * Actualiza los estilos de la vista de Bienvenida.
+   * Configura el texto de marcador de posición y el icono de búsqueda para el campo de búsqueda.
    */
   public void actualizarEstilos() {
     Vista.getSearchTf().putClientProperty("JTextField.placeholderText", "Search");
     Vista.getSearchTf().putClientProperty("JTextField.leadingIcon", new FlatSVGIcon("imagenes/lupa.svg"));
   }
 
+  /**
+   * Muestra un panel en la vista de Bienvenida.
+   *
+   * @param p el panel a mostrar
+   */
   public void mostrarpanel(JPanel p) {
     p.setSize(1150, 800);
     p.setLocation(0, 0);
@@ -42,18 +50,5 @@ public class cBienvenida {
     Vista.getFrame().revalidate();
     Vista.getFrame().repaint();
   }
-  /*
-  public static void IdiomaEspañol() {
-    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
-
-    // Ejemplo de cómo establecer el texto de un botón
-    Vistadescubrir.setText(idioma.getString());
-    JButton boton = new JButton();
-    boton.setText(idioma.getString("etiqueta_boton_abrir"));
-
-    // Ejemplo de cómo establecer el texto de una etiqueta
-    JLabel etiqueta = new JLabel();
-    etiqueta.setText(idioma.getString("etiqueta_bienvenida"));
-  }*/
 
 }
