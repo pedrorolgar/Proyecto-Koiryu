@@ -40,6 +40,8 @@ public class DescubrirCitas extends javax.swing.JPanel {
     jLabel6 = new javax.swing.JLabel();
     jLabel7 = new javax.swing.JLabel();
     jPanel2 = new javax.swing.JPanel();
+    Español1 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -100,6 +102,25 @@ public class DescubrirCitas extends javax.swing.JPanel {
 
     jPanel2.setBackground(new java.awt.Color(53, 49, 48));
     jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    jPanel2.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    jPanel2.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 10, -1, -1));
+
     add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
@@ -115,12 +136,21 @@ public class DescubrirCitas extends javax.swing.JPanel {
 
   }//GEN-LAST:event_jLabel8MouseClicked
 
-  public void idiomaInglesDescubrirCitas() {
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+  }//GEN-LAST:event_Español1MouseClicked
+
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idioma");
     jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+  }//GEN-LAST:event_InglesMouseClicked
 
-  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel3;

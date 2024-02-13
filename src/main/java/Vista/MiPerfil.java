@@ -4,17 +4,22 @@
  */
 package Vista;
 
+import Controlador.cMiPerfil;
 import java.util.ResourceBundle;
+import lombok.Getter;
 
 /**
  *
  * @author Pedro Rollán García
  */
+@Getter
 public class MiPerfil extends javax.swing.JPanel {
 
   /**
    * Creates new form MiPerfil
    */
+  cMiPerfil controlador = new cMiPerfil(this);
+
   public MiPerfil() {
     initComponents();
   }
@@ -29,6 +34,7 @@ public class MiPerfil extends javax.swing.JPanel {
   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
   private void initComponents() {
 
+    frame = new javax.swing.JPanel();
     jLabel2 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
     jLabel3 = new javax.swing.JLabel();
@@ -45,8 +51,15 @@ public class MiPerfil extends javax.swing.JPanel {
     jLabel14 = new javax.swing.JLabel();
     EditarPerfilBtn = new javax.swing.JButton();
     misEventosBtn = new javax.swing.JButton();
+    Español1 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
+    jPanel2 = new javax.swing.JPanel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    frame.setOpaque(false);
+    frame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
 
     jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirFotoGrande.png"))); // NOI18N
     add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 280, 180, 180));
@@ -107,6 +120,11 @@ public class MiPerfil extends javax.swing.JPanel {
     EditarPerfilBtn.setForeground(new java.awt.Color(255, 255, 255));
     EditarPerfilBtn.setText("Editar Perfil");
     EditarPerfilBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    EditarPerfilBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        EditarPerfilBtnMouseClicked(evt);
+      }
+    });
     add(EditarPerfilBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 354, 291, 42));
 
     misEventosBtn.setBackground(new java.awt.Color(122, 137, 159));
@@ -114,16 +132,76 @@ public class MiPerfil extends javax.swing.JPanel {
     misEventosBtn.setForeground(new java.awt.Color(255, 255, 255));
     misEventosBtn.setText("Mis Eventos");
     misEventosBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    misEventosBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        misEventosBtnMouseClicked(evt);
+      }
+    });
     add(misEventosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 354, 291, 42));
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 770, -1, -1));
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 770, -1, -1));
+
+    jPanel2.setBackground(new java.awt.Color(53, 49, 48));
+    jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
-  public void idiomaInglesMiPerfil() {
+
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    EditarPerfilBtn.setText(idioma.getString("MiPerfil.editProfile"));
+    misEventosBtn.setText(idioma.getString("MiPerfil.myEvents"));
+  }//GEN-LAST:event_Español1MouseClicked
+
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idioma");
     EditarPerfilBtn.setText(idioma.getString("MiPerfil.editProfile"));
     misEventosBtn.setText(idioma.getString("MiPerfil.myEvents"));
 
-  }
+  }//GEN-LAST:event_InglesMouseClicked
+
+  private void EditarPerfilBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EditarPerfilBtnMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    controlador.mostrarpanel(new ModificarPerfil());
+    getFrame().removeAll();
+    getFrame().add(new ModificarPerfil(), new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
+    getFrame().revalidate();
+    getFrame().repaint();
+  }//GEN-LAST:event_EditarPerfilBtnMouseClicked
+
+  private void misEventosBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_misEventosBtnMouseClicked
+    // TODO add your handling code here:
+    frame.setVisible(true);
+    controlador.mostrarpanel(new MisEventos());
+    getFrame().removeAll();
+    getFrame().add(new MisEventos(), new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
+    getFrame().revalidate();
+    getFrame().repaint();
+  }//GEN-LAST:event_misEventosBtnMouseClicked
+
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarPerfilBtn;
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
+  private javax.swing.JPanel frame;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel10;
   private javax.swing.JLabel jLabel11;
@@ -138,6 +216,7 @@ public class MiPerfil extends javax.swing.JPanel {
   private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
+  private javax.swing.JPanel jPanel2;
   private javax.swing.JButton misEventosBtn;
   // End of variables declaration//GEN-END:variables
 }

@@ -14,7 +14,6 @@ public class hibernateUtil {
 
   private static SessionFactory sessionFactory = buildSessionFactory();
 
-
   /**
    * Build session factory session factory.
    *
@@ -26,4 +25,9 @@ public class hibernateUtil {
       "hibernate.cfg.xml");
     return configuration.buildSessionFactory();
   }
+
+  public static SessionFactory getSessionFactory() {
+    return sessionFactory;
+  }
+
 }

@@ -1,36 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controlador;
 
 import Vista.CrearEvento;
 
-/**
- *
- * @author Pedro Rollán García
- */
 public class cCrearEvento {
 
-  private final CrearEvento Vista;
+  private final CrearEvento vista;
 
-  /**
-   * Instantiates a new C login.
-   *
-   * @param Vista the vista
-   */
-  public cCrearEvento(CrearEvento Vista) {
-    this.Vista = Vista;
+  public cCrearEvento(CrearEvento vista) {
+    this.vista = vista;
+
   }
 
-  /**
-   * Actualizar estilos.
-   */
   public void actualizarEstilos() {
-    //ME DA ERROR NO SE PORQUE
-    /*Vista.getDescripcionEvento().putClientProperty("JTextField.placeholderText", "Search");
-    Vista.getNombreEvento1().putClientProperty("JTextField.placeholderText", "Search");
-    Vista.getDescripcionEvento().putClientProperty("JTextField.leadingIcon", new FlatSVGIcon("imagenes/lupa.svg"));*/
-
+    vista.getDescripcionEvento().putClientProperty("JTextField.placeholderText", "Añade una descripcion al evento");
+    vista.getNombreEvento1().putClientProperty("JTextField.placeholderText", "Introduce el nombre");
   }
+
 }

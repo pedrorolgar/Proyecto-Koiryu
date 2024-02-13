@@ -33,6 +33,44 @@ public class EventosFestivales extends javax.swing.JPanel {
     jLabel9 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
     jPanel1 = new javax.swing.JPanel();
+    Español1 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
+    jLabel2 = new javax.swing.JLabel();
+    jLabel3 = new javax.swing.JLabel();
+    jLabel4 = new javax.swing.JLabel();
+    jLabel5 = new javax.swing.JLabel();
+    jLabel6 = new javax.swing.JLabel();
+    jLabel7 = new javax.swing.JLabel();
+    jLabel10 = new javax.swing.JLabel();
+    jLabel11 = new javax.swing.JLabel();
+    jLabel12 = new javax.swing.JLabel();
+    jLabel13 = new javax.swing.JLabel();
+    jLabel14 = new javax.swing.JLabel();
+    jLabel15 = new javax.swing.JLabel();
+    jLabel16 = new javax.swing.JLabel();
+    jLabel17 = new javax.swing.JLabel();
+    jLabel18 = new javax.swing.JLabel();
+    jLabel19 = new javax.swing.JLabel();
+    jLabel20 = new javax.swing.JLabel();
+    jLabel21 = new javax.swing.JLabel();
+    jLabel22 = new javax.swing.JLabel();
+    jLabel23 = new javax.swing.JLabel();
+    jLabel24 = new javax.swing.JLabel();
+    jLabel25 = new javax.swing.JLabel();
+    jLabel26 = new javax.swing.JLabel();
+    jLabel27 = new javax.swing.JLabel();
+    jLabel28 = new javax.swing.JLabel();
+    jLabel29 = new javax.swing.JLabel();
+    jLabel30 = new javax.swing.JLabel();
+    jLabel31 = new javax.swing.JLabel();
+    jLabel32 = new javax.swing.JLabel();
+    jLabel33 = new javax.swing.JLabel();
+    jLabel34 = new javax.swing.JLabel();
+    jLabel35 = new javax.swing.JLabel();
+    jLabel36 = new javax.swing.JLabel();
+    jLabel37 = new javax.swing.JLabel();
+    jLabel38 = new javax.swing.JLabel();
+    jLabel39 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -63,6 +101,157 @@ public class EventosFestivales extends javax.swing.JPanel {
 
     jPanel1.setBackground(new java.awt.Color(53, 49, 48));
     jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    jPanel1.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    jPanel1.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 10, -1, -1));
+
+    jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image (5).png"))); // NOI18N
+    jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 133, 300, 200));
+
+    jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image (2).png"))); // NOI18N
+    jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(722, 428, 300, 200));
+
+    jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image (1).png"))); // NOI18N
+    jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 428, 300, 200));
+
+    jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image.png"))); // NOI18N
+    jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 428, 300, 200));
+
+    jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image (3).png"))); // NOI18N
+    jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(722, 133, 300, 200));
+
+    jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/artwork-image (4).png"))); // NOI18N
+    jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 133, 300, 200));
+
+    jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 680, 30, 30));
+
+    jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 680, 30, 30));
+
+    jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(946, 375, 30, 30));
+
+    jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(629, 375, 30, 30));
+
+    jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 375, 30, 30));
+
+    jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ph_heart-thin.png"))); // NOI18N
+    jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(946, 680, 30, 30));
+
+    jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 378, 24, 23));
+
+    jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(916, 683, 24, 23));
+
+    jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 683, 24, 23));
+
+    jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(916, 378, 24, 23));
+
+    jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 378, 24, 23));
+
+    jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (1).png"))); // NOI18N
+    jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 683, 24, 23));
+
+    jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 685, 18, 18));
+
+    jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(347, 381, 18, 18));
+
+    jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 685, 18, 18));
+
+    jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 685, 18, 18));
+
+    jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(981, 381, 18, 18));
+
+    jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Vector (2).png"))); // NOI18N
+    jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(665, 381, 18, 18));
+
+    jLabel28.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel28.setText("Coachella");
+    jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 640, 290, -1));
+
+    jLabel29.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel29.setText("Tomorrowland");
+    jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 290, -1));
+
+    jLabel30.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel30.setText("Festival Medusa");
+    jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 350, 290, -1));
+
+    jLabel31.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel31.setText("Lollapalooza");
+    jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 350, 290, -1));
+
+    jLabel32.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel32.setText("Concierto de Melendi");
+    jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 640, 290, -1));
+
+    jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel33.setText("Concierto de Morat");
+    jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 640, 290, -1));
+
+    jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel34.setText("Ramón");
+    jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 680, 180, -1));
+
+    jLabel35.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel35.setText("Jose Luis");
+    jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 380, 180, -1));
+
+    jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel36.setText("Ana");
+    jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 380, 180, -1));
+
+    jLabel37.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel37.setText("Mario");
+    jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 380, 180, -1));
+
+    jLabel38.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel38.setText("Carmen");
+    jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 680, 180, -1));
+
+    jLabel39.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+    jLabel39.setText("Arturo");
+    jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 680, 180, -1));
+
     add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
@@ -76,14 +265,60 @@ public class EventosFestivales extends javax.swing.JPanel {
     // TODO add your handling code here:
   }//GEN-LAST:event_jLabel8MouseClicked
 
-  public void idiomaInglesEventosfestivales() {
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+    jLabel1.setText(idioma.getString("EventosArte.forYou"));
+  }//GEN-LAST:event_Español1MouseClicked
+
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idioma");
     jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
     jLabel1.setText(idioma.getString("EventosArte.forYou"));
+  }//GEN-LAST:event_InglesMouseClicked
 
-  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
   private javax.swing.JLabel jLabel1;
+  private javax.swing.JLabel jLabel10;
+  private javax.swing.JLabel jLabel11;
+  private javax.swing.JLabel jLabel12;
+  private javax.swing.JLabel jLabel13;
+  private javax.swing.JLabel jLabel14;
+  private javax.swing.JLabel jLabel15;
+  private javax.swing.JLabel jLabel16;
+  private javax.swing.JLabel jLabel17;
+  private javax.swing.JLabel jLabel18;
+  private javax.swing.JLabel jLabel19;
+  private javax.swing.JLabel jLabel2;
+  private javax.swing.JLabel jLabel20;
+  private javax.swing.JLabel jLabel21;
+  private javax.swing.JLabel jLabel22;
+  private javax.swing.JLabel jLabel23;
+  private javax.swing.JLabel jLabel24;
+  private javax.swing.JLabel jLabel25;
+  private javax.swing.JLabel jLabel26;
+  private javax.swing.JLabel jLabel27;
+  private javax.swing.JLabel jLabel28;
+  private javax.swing.JLabel jLabel29;
+  private javax.swing.JLabel jLabel3;
+  private javax.swing.JLabel jLabel30;
+  private javax.swing.JLabel jLabel31;
+  private javax.swing.JLabel jLabel32;
+  private javax.swing.JLabel jLabel33;
+  private javax.swing.JLabel jLabel34;
+  private javax.swing.JLabel jLabel35;
+  private javax.swing.JLabel jLabel36;
+  private javax.swing.JLabel jLabel37;
+  private javax.swing.JLabel jLabel38;
+  private javax.swing.JLabel jLabel39;
+  private javax.swing.JLabel jLabel4;
+  private javax.swing.JLabel jLabel5;
+  private javax.swing.JLabel jLabel6;
+  private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
   private javax.swing.JPanel jPanel1;

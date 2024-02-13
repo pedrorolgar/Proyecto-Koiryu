@@ -23,6 +23,12 @@ public class Bienvenida extends javax.swing.JFrame {
    */
   DescubrirCitas descubrir = new DescubrirCitas();
   cBienvenida Controlador = new cBienvenida(this);
+  EventosArte eventosArte = new EventosArte();
+  EventosFestivales eventosFestivales = new EventosFestivales();
+  EventosNaturaleza eventosNaturaleza = new EventosNaturaleza();
+  MiPerfil miPerfil = new MiPerfil();
+  MisEventos misEventos = new MisEventos();
+  ModificarPerfil modificarPerfil = new ModificarPerfil();
 
   public Bienvenida() {
     setVisible(true);
@@ -43,6 +49,8 @@ public class Bienvenida extends javax.swing.JFrame {
   private void initComponents() {
 
     frame = new javax.swing.JPanel();
+    Español1 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
     jPanel3 = new javax.swing.JPanel();
     tituloBienvenida = new javax.swing.JLabel();
     textoBienvenida = new javax.swing.JLabel();
@@ -73,8 +81,6 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel43 = new javax.swing.JLabel();
     irUsuario = new javax.swing.JLabel();
     jLabel8 = new javax.swing.JLabel();
-    Ingles = new javax.swing.JLabel();
-    Español1 = new javax.swing.JLabel();
     jPanel2 = new javax.swing.JPanel();
     searchTf = new javax.swing.JTextField();
     panelAbsoluto = new javax.swing.JPanel();
@@ -86,6 +92,25 @@ public class Bienvenida extends javax.swing.JFrame {
     frame.setBackground(new java.awt.Color(53, 49, 48));
     frame.setOpaque(false);
     frame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    frame.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    frame.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+
     getContentPane().add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 66, 1150, 800));
 
     jPanel3.setBackground(new java.awt.Color(75, 76, 73));
@@ -271,24 +296,6 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel8.setText("jLabel8");
     jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 801, 40, 40));
 
-    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
-    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
-      public void mouseClicked(java.awt.event.MouseEvent evt) {
-        InglesMouseClicked(evt);
-      }
-    });
-    jPanel1.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 810, 20, 20));
-
-    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
-    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
-      public void mouseClicked(java.awt.event.MouseEvent evt) {
-        Español1MouseClicked(evt);
-      }
-    });
-    jPanel1.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 810, 20, 20));
-
     getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 863));
 
     jPanel2.setBackground(new java.awt.Color(75, 76, 73));
@@ -348,12 +355,23 @@ public class Bienvenida extends javax.swing.JFrame {
     // TODO add your handling code here:
     frame.setVisible(false);
     setVisible(true);
-    repaint();
+
   }//GEN-LAST:event_VistaInicioMouseClicked
 
   private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
     // TODO add your handling code here:
-    //Controlador.IdiomaEspañol();
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    VistaDescubrir.setText(idioma.getString("navigation.discover"));
+    eventos.setText(idioma.getString("navigation.eventos"));
+    citas.setText(idioma.getString("navigation.citas"));
+    VistaInicio.setText(idioma.getString("navigation.home"));
+    eventos2.setText(idioma.getString("navigation.eventos"));
+    VistaFestivales.setText(idioma.getString("navigation.festivals"));
+    VistaArte.setText(idioma.getString("navigation.art"));
+    VistaNaturaleza.setText(idioma.getString("navigation.nature"));
+    CrearEvento.setText(idioma.getString("navigation.createEvent"));
+    tituloBienvenida.setText(idioma.getString("Bienvenida.title"));
+    textoBienvenida.setText(idioma.getString("Bienvenida.message"));
   }//GEN-LAST:event_Español1MouseClicked
 
   private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked

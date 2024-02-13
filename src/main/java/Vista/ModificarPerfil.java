@@ -48,6 +48,8 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jLabel5 = new javax.swing.JLabel();
     panelImagenFondo = new javax.swing.JPanel();
     panelEditarPerfil = new javax.swing.JPanel();
+    Ingles = new javax.swing.JLabel();
+    Español1 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -150,9 +152,28 @@ public class ModificarPerfil extends javax.swing.JPanel {
 
     panelEditarPerfil.setBackground(new java.awt.Color(75, 76, 73));
     panelEditarPerfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    panelEditarPerfil.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 630, -1, -1));
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    panelEditarPerfil.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 630, -1, -1));
+
     add(panelEditarPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 85, 803, 660));
 
-    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/marcoFlores.jpeg"))); // NOI18N
+    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/marcoFlores.jpg"))); // NOI18N
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
@@ -167,7 +188,20 @@ public class ModificarPerfil extends javax.swing.JPanel {
 
   }//GEN-LAST:event_jLabel8MouseClicked
 
-  public void idiomaInglesMisEventos() {
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
+    jLabel11.setText(idioma.getString("ModificarPerfil.email"));
+    jLabel3.setText(idioma.getString("ModificarPerfil.username"));
+    jLabel4.setText(idioma.getString("ModificarPerfil.city"));
+    jLabel5.setText(idioma.getString("ModificarPerfil.description"));
+    jLabel6.setText(idioma.getString("ModificarPerfil.phone"));
+    EditarCambios.setText(idioma.getString("ModificarPerfil.saveChanges"));
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+  }//GEN-LAST:event_Español1MouseClicked
+
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idioma");
     jLabel11.setText(idioma.getString("ModificarPerfil.email"));
     jLabel3.setText(idioma.getString("ModificarPerfil.username"));
@@ -176,9 +210,12 @@ public class ModificarPerfil extends javax.swing.JPanel {
     jLabel6.setText(idioma.getString("ModificarPerfil.phone"));
     EditarCambios.setText(idioma.getString("ModificarPerfil.saveChanges"));
     jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
-  }
+  }//GEN-LAST:event_InglesMouseClicked
+
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarCambios;
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
   private javax.swing.JTextField ciudad;
   private javax.swing.JTextField editarCorreo;
   private javax.swing.JTextField editarDescripcion;

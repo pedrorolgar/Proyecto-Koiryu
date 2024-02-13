@@ -5,6 +5,7 @@
 package Vista;
 
 import Controlador.cCrearEvento;
+import Model.Usuarios;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.util.ResourceBundle;
@@ -22,13 +23,21 @@ public class CrearEvento extends javax.swing.JPanel {
   /**
    * Creates new form CrearEvento
    */
+  private final cCrearEvento controladorCrearEvento;
+
   public CrearEvento() {
     setVisible(true);
     FlatIntelliJLaf.setup();
     FlatLightLaf.setup();
     initComponents();
+    controladorCrearEvento = new cCrearEvento(this);
     cCrearEvento Controlador = new cCrearEvento(this);
     Controlador.actualizarEstilos();
+
+  }
+
+  public void crearEventoUsu(Usuarios usuario) {
+
   }
 
   /**
@@ -44,7 +53,7 @@ public class CrearEvento extends javax.swing.JPanel {
     jSeparator1 = new javax.swing.JSeparator();
     descripcionEvento = new javax.swing.JTextField();
     nombreEvento1 = new javax.swing.JTextField();
-    jComboBox1 = new javax.swing.JComboBox<>();
+    tipoEventoCb = new javax.swing.JComboBox<>();
     jSeparator2 = new javax.swing.JSeparator();
     tituloCrear = new javax.swing.JLabel();
     subtituloCrear = new javax.swing.JLabel();
@@ -56,6 +65,8 @@ public class CrearEvento extends javax.swing.JPanel {
     volverCrear = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
     panelEventos = new javax.swing.JPanel();
+    Español1 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -79,9 +90,9 @@ public class CrearEvento extends javax.swing.JPanel {
     });
     add(nombreEvento1, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 365, 491, 41));
 
-    jComboBox1.setBackground(new java.awt.Color(51, 51, 51));
-    jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Festival", "Arte", "Naturaleza", " " }));
-    add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 424, 491, 41));
+    tipoEventoCb.setBackground(new java.awt.Color(51, 51, 51));
+    tipoEventoCb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Festival", "Arte", "Naturaleza", " " }));
+    add(tipoEventoCb, new org.netbeans.lib.awtextra.AbsoluteConstraints(399, 424, 491, 41));
 
     jSeparator2.setBackground(new java.awt.Color(196, 205, 213));
     jSeparator2.setForeground(new java.awt.Color(196, 205, 213));
@@ -102,6 +113,11 @@ public class CrearEvento extends javax.swing.JPanel {
     crearEvento.setForeground(new java.awt.Color(0, 0, 0));
     crearEvento.setText("Crear Evento");
     crearEvento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    crearEvento.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        crearEventoMouseClicked(evt);
+      }
+    });
     add(crearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 688, 170, 34));
 
     tipoEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -143,6 +159,25 @@ public class CrearEvento extends javax.swing.JPanel {
 
     panelEventos.setBackground(new java.awt.Color(75, 76, 73));
     panelEventos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    panelEventos.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 630, -1, -1));
+
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    panelEventos.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 630, -1, -1));
+
     add(panelEventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 85, 803, 660));
 
     jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/aurora.jpg"))); // NOI18N
@@ -163,20 +198,37 @@ public class CrearEvento extends javax.swing.JPanel {
     // TODO add your handling code here:
   }//GEN-LAST:event_jLabel9MouseClicked
 
-  public void idiomaInglesCrearEventos() {
-    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");
     tipoEvento.setText(idioma.getString("CrearEvento.eventType"));
-    nombre.setText(idioma.getString("CrearEvento.name"));
+    nombre.setText(idioma.getString("CrearEvento.eventName"));
     crearEvento.setText(idioma.getString("CrearEvento.createButton"));
     tituloCrear.setText(idioma.getString("CrearEvento.title"));
     subtituloCrear.setText(idioma.getString("CrearEvento.subtitle"));
     volverCrear.setText(idioma.getString("CrearEvento.returnHome"));
+  }//GEN-LAST:event_Español1MouseClicked
 
-  }
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    tipoEvento.setText(idioma.getString("CrearEvento.eventType"));
+    nombre.setText(idioma.getString("CrearEvento.eventName"));
+    crearEvento.setText(idioma.getString("CrearEvento.createButton"));
+    tituloCrear.setText(idioma.getString("CrearEvento.title"));
+    subtituloCrear.setText(idioma.getString("CrearEvento.subtitle"));
+    volverCrear.setText(idioma.getString("CrearEvento.returnHome"));
+  }//GEN-LAST:event_InglesMouseClicked
+
+  private void crearEventoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_crearEventoMouseClicked
+    // TODO add your handling code here:
+  }//GEN-LAST:event_crearEventoMouseClicked
+
   // Variables declaration - do not modify//GEN-BEGIN:variables
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
   private javax.swing.JButton crearEvento;
   private javax.swing.JTextField descripcionEvento;
-  private javax.swing.JComboBox<String> jComboBox1;
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
@@ -188,6 +240,7 @@ public class CrearEvento extends javax.swing.JPanel {
   private javax.swing.JPanel panelEventos;
   private javax.swing.JLabel subtituloCrear;
   private javax.swing.JLabel tipoEvento;
+  private javax.swing.JComboBox<String> tipoEventoCb;
   private javax.swing.JLabel tituloCrear;
   private javax.swing.JLabel volverCrear;
   // End of variables declaration//GEN-END:variables

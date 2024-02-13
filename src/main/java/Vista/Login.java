@@ -5,6 +5,7 @@
 package Vista;
 
 import Controlador.cLogin;
+import Model.Usuarios;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 import lombok.Getter;
@@ -20,6 +21,8 @@ public class Login extends javax.swing.JFrame {
   /**
    * Creates new form Login
    */
+  public Usuarios usuarioActual;
+
   public Login() {
     setVisible(true);
     FlatIntelliJLaf.setup();
@@ -28,6 +31,7 @@ public class Login extends javax.swing.JFrame {
     cLogin controlador = new cLogin(this);
     controlador.actualizarEstilos();
     controlador.inicializarEventos();
+    this.usuarioActual = controlador.obtenerUsuarioActual();
   }
 
   /**
@@ -186,6 +190,14 @@ public class Login extends javax.swing.JFrame {
 
       }
     });
+  }
+
+  public Usuarios getUsuarioActual() {
+    return usuarioActual;
+  }
+
+  public void setUsuarioActual(Usuarios usuarioActual) {
+    this.usuarioActual = usuarioActual;
   }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

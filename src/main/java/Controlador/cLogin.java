@@ -94,4 +94,17 @@ public class cLogin {
       }
     });
   }
+
+  public Usuarios obtenerUsuarioActual() {
+    String nombre = Vista.getUsuLogin().getText();
+    Usuarios usuario = Usuarios.encontrarPorNombreDeUsuario(nombre);
+
+    if (usuario != null) {
+      System.out.println("Usuario actual: " + usuario.getNombreUsuario());
+      return usuario;
+    } else {
+      System.out.println("No se ha encontrado al usuario");
+      return null;
+    }
+  }
 }
