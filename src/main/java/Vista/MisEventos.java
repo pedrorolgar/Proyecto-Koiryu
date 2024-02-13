@@ -7,13 +7,19 @@ package Vista;
 import java.util.ResourceBundle;
 
 /**
+ * Panel para mostrar y gestionar eventos.
+ *
+ * Permite visualizar una lista de eventos y cambiar el idioma entre español e inglés.
+ * Los eventos se muestran con información como nombre, descripción, autor y tipo.
  *
  * @author Pedro Rollán García
  */
 public class MisEventos extends javax.swing.JPanel {
 
   /**
-   * Creates new form MisEventos
+   * Método generado automáticamente que inicializa los componentes del panel.
+   * Advertencia: No modifique este código. El contenido de este método es siempre
+   * regenerado por el Editor de Formularios.
    */
   public MisEventos() {
     initComponents();
@@ -403,7 +409,12 @@ public class MisEventos extends javax.swing.JPanel {
 
     add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
-
+/**
+   * Método invocado cuando se hace clic en el icono de la bandera inglesa.
+   * Cambia el idioma de la interfaz a inglés.
+   *
+   * @param evt El evento de clic del mouse
+   */
   private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
     // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idioma");
@@ -414,6 +425,12 @@ public class MisEventos extends javax.swing.JPanel {
     jLabel6.setText(idioma.getString("MisEventos.type"));
   }//GEN-LAST:event_InglesMouseClicked
 
+  /**
+   * Método invocado cuando se hace clic en el icono de la bandera española.
+   * Cambia el idioma de la interfaz a español.
+   *
+   * @param evt El evento de clic del mouse
+   */
   private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
     // TODO add your handling code here:
     ResourceBundle idioma = ResourceBundle.getBundle("idiomaES");

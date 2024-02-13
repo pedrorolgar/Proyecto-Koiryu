@@ -10,7 +10,8 @@ import com.formdev.flatlaf.FlatLightLaf;
 import lombok.Getter;
 
 /**
- * The type Sign in.
+ * Clase que representa la ventana de inicio de sesión.
+ * Esta clase extiende JFrame y se utiliza para mostrar la interfaz de usuario para iniciar sesión en la aplicación.
  *
  * @author Pedro Rollán García
  */
@@ -20,7 +21,7 @@ public class SignIn extends javax.swing.JFrame {
   cSignIn Controlador = new cSignIn(this);
 
   /**
-   * Creates new form Login
+   * Constructor que inicializa la ventana de inicio de sesión.
    */
   public SignIn() {
     FlatIntelliJLaf.setup();

@@ -9,7 +9,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * The type Pantalla de carga.
+ * Pantalla de carga que muestra una barra de progreso mientras se inicializa la aplicación.
+ * Una vez que la barra de progreso alcanza el 100%, la pantalla de carga se cierra y se abre la pantalla de inicio de sesión.
+ *
+ * Esta clase extiende JFrame y es utilizada para mostrar una pantalla de carga al iniciar la aplicación.
+ *
  * @author Pedro Rollán García
  */
 public class PantallaDeCarga extends javax.swing.JFrame {
@@ -17,7 +21,9 @@ public class PantallaDeCarga extends javax.swing.JFrame {
   private int porcentaje = 0;
 
   /**
-   * Creates new form Splash
+   * Constructor que inicializa la pantalla de carga.
+   * Se crea un hilo que incrementa el porcentaje de carga hasta llegar al 100%.
+   * Después de alcanzar el 100%, se cierra la pantalla de carga y se abre la pantalla de inicio de sesión.
    */
   public PantallaDeCarga() {
     setUndecorated(true);
@@ -76,9 +82,9 @@ public class PantallaDeCarga extends javax.swing.JFrame {
   }// </editor-fold>//GEN-END:initComponents
 
   /**
-   * Main.
+   * Método principal para iniciar la aplicación.
    *
-   * @param args the command line arguments
+   * @param args los argumentos de la línea de comandos
    */
   public static void main(String args[]) {
     /* Set the Nimbus look and feel */

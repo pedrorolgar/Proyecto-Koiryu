@@ -7,6 +7,8 @@ package Vista;
 import java.util.ResourceBundle;
 
 /**
+ * Panel para mostrar información sobre eventos y festivales.
+ * Permite cambiar entre idioma español e inglés.
  *
  * @author Pedro Rollán García
  */

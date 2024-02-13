@@ -8,7 +8,8 @@ import Controlador.cRecuperarContraseña;
 import lombok.Getter;
 
 /**
- * The type Recuperar contraseña.
+ * Clase que representa la ventana de recuperación de contraseña.
+ * Esta clase extiende JFrame y se utiliza para mostrar la interfaz de usuario para recuperar una contraseña olvidada.
  *
  * @author Pedro Rollán García
  */
@@ -18,7 +19,7 @@ public class RecuperarContraseña extends javax.swing.JFrame {
   cRecuperarContraseña Controlador = new cRecuperarContraseña(this);
 
   /**
-   * Creates new form Login
+   * Constructor que inicializa la ventana de recuperación de contraseña.
    */
   public RecuperarContraseña() {
     initComponents();

@@ -7,13 +7,15 @@ package Vista;
 import java.util.ResourceBundle;
 
 /**
+ * Panel para mostrar información sobre eventos de naturaleza.
+ * Permite cambiar entre idioma español e inglés.
  *
  * @author Pedro Rollán García
  */
 public class EventosNaturaleza extends javax.swing.JPanel {
 
   /**
-   * Creates new form EventosNaturaleza
+   * Crea un nuevo panel de EventosNaturaleza.
    */
   public EventosNaturaleza() {
     initComponents();

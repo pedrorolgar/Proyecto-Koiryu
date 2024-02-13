@@ -9,6 +9,9 @@ import java.util.ResourceBundle;
 import lombok.Getter;
 
 /**
+ * Panel para mostrar el perfil del usuario.
+ * Permite al usuario ver y editar su información personal.
+ * También proporciona enlaces para ver sus eventos y cambiar el idioma.
  *
  * @author Pedro Rollán García
  */
@@ -16,10 +19,13 @@ import lombok.Getter;
 public class MiPerfil extends javax.swing.JPanel {
 
   /**
-   * Creates new form MiPerfil
+   * Controlador para el panel de MiPerfil.
    */
   cMiPerfil controlador = new cMiPerfil(this);
 
+  /**
+   * Crea una nueva instancia de la clase MiPerfil.
+   */
   public MiPerfil() {
     initComponents();
   }

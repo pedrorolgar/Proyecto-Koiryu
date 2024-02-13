@@ -7,6 +7,9 @@ package Vista;
 import java.util.ResourceBundle;
 
 /**
+ * Panel para mostrar eventos de arte.
+ * Este panel proporciona la interfaz gráfica para que los usuarios puedan explorar eventos de arte disponibles.
+ * Permite ver eventos específicos de arte y realizar acciones como marcar como favorito, etc.
  *
  * @author Pedro Rollán García
  */
@@ -14,6 +17,8 @@ public class EventosArte extends javax.swing.JPanel {
 
   /**
    * Creates new form EventosArte
+   * Constructor de la clase EventosArte.
+   * Crea una nueva instancia de EventosArte e inicializa los componentes.
    */
   public EventosArte() {
     initComponents();

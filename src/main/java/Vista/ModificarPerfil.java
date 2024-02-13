@@ -12,6 +12,10 @@ import javax.swing.JOptionPane;
 import lombok.Getter;
 
 /**
+ * Panel para modificar el perfil de usuario.
+ *
+ * Permite al usuario modificar su nombre de usuario, correo electrónico, teléfono, ciudad y descripción.
+ * También proporciona opciones para cambiar el idioma de la interfaz.
  *
  * @author Pedro Rollán García
  */
@@ -19,10 +23,13 @@ import lombok.Getter;
 public class ModificarPerfil extends javax.swing.JPanel {
 
   /**
-   * Creates new form ModificarPerfil
+   * Controlador asociado al panel de modificación de perfil.
    */
   cModificarPerfil Controlador = new cModificarPerfil(this);
 
+  /**
+   * Constructor que inicializa el panel de modificación de perfil.
+   */
   public ModificarPerfil() {
     setVisible(true);
     FlatIntelliJLaf.setup();

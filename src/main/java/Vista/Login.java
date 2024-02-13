@@ -11,7 +11,9 @@ import com.formdev.flatlaf.FlatLightLaf;
 import lombok.Getter;
 
 /**
- * The type Login.
+ * Clase para la interfaz de inicio de sesión.
+ * Permite al usuario iniciar sesión y recuperar su contraseña.
+ * También proporciona enlace para crear una nueva cuenta.
  *
  * @author Pedro Rollán García
  */
@@ -19,11 +21,15 @@ import lombok.Getter;
 public class Login extends javax.swing.JFrame {
 
   /**
-   * Creates new form Login
+   * Controlador para la interfaz de inicio de sesión.
    */
   cLogin controlador = new cLogin(this);
   public Usuarios usuarioActual;
 
+  /**
+   * Crea una nueva instancia de la clase Login.
+   * Inicializa la interfaz de usuario y establece los eventos.
+   */
   public Login() {
     setVisible(true);
     FlatIntelliJLaf.setup();
