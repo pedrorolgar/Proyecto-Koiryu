@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Pedro Rollán García
@@ -37,6 +39,7 @@ public class DescubrirCitas extends javax.swing.JPanel {
     jPanel1 = new javax.swing.JPanel();
     jLabel6 = new javax.swing.JLabel();
     jLabel7 = new javax.swing.JLabel();
+    jPanel2 = new javax.swing.JPanel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -94,6 +97,10 @@ public class DescubrirCitas extends javax.swing.JPanel {
     jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, 120, -1));
 
     add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 59, 502, 696));
+
+    jPanel2.setBackground(new java.awt.Color(53, 49, 48));
+    jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
   private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
@@ -108,6 +115,11 @@ public class DescubrirCitas extends javax.swing.JPanel {
 
   }//GEN-LAST:event_jLabel8MouseClicked
 
+  public void idiomaInglesDescubrirCitas() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel2;
@@ -119,5 +131,6 @@ public class DescubrirCitas extends javax.swing.JPanel {
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
   private javax.swing.JPanel jPanel1;
+  private javax.swing.JPanel jPanel2;
   // End of variables declaration//GEN-END:variables
 }

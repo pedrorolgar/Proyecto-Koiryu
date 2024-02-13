@@ -2,6 +2,7 @@ Controlador\cCrearEvento.class
 Vista\Login$3.class
 Model\Eventos.class
 Vista\EventosArte.class
+Vista\Bienvenida$9.class
 Vista\EventosArte$1.class
 Vista\RecuperarContraseña$1.class
 Vista\Bienvenida$6.class
@@ -16,6 +17,7 @@ Vista\PantallaDeCarga$1.class
 Vista\ModificarPerfil$1.class
 Vista\Bienvenida$4.class
 Vista\CrearEvento$3.class
+Vista\Bienvenida$10.class
 Vista\Login$1.class
 Vista\RecuperarContraseña.class
 Vista\Bienvenida$3.class

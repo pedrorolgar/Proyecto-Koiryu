@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Pedro Rollán García
@@ -114,7 +116,12 @@ public class MiPerfil extends javax.swing.JPanel {
     misEventosBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(misEventosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 354, 291, 42));
   }// </editor-fold>//GEN-END:initComponents
+  public void idiomaInglesMiPerfil() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    EditarPerfilBtn.setText(idioma.getString("MiPerfil.editProfile"));
+    misEventosBtn.setText(idioma.getString("MiPerfil.myEvents"));
 
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarPerfilBtn;
   private javax.swing.JLabel jLabel1;

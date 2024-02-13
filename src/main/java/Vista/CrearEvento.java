@@ -7,6 +7,7 @@ package Vista;
 import Controlador.cCrearEvento;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
+import java.util.ResourceBundle;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -45,14 +46,14 @@ public class CrearEvento extends javax.swing.JPanel {
     nombreEvento1 = new javax.swing.JTextField();
     jComboBox1 = new javax.swing.JComboBox<>();
     jSeparator2 = new javax.swing.JSeparator();
-    jLabel2 = new javax.swing.JLabel();
-    jLabel3 = new javax.swing.JLabel();
+    tituloCrear = new javax.swing.JLabel();
+    subtituloCrear = new javax.swing.JLabel();
     crearEvento = new javax.swing.JButton();
-    jLabel5 = new javax.swing.JLabel();
-    jLabel4 = new javax.swing.JLabel();
+    tipoEvento = new javax.swing.JLabel();
+    nombre = new javax.swing.JLabel();
     jLabel7 = new javax.swing.JLabel();
     jLabel6 = new javax.swing.JLabel();
-    jLabel8 = new javax.swing.JLabel();
+    volverCrear = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
     panelEventos = new javax.swing.JPanel();
     jLabel1 = new javax.swing.JLabel();
@@ -86,15 +87,15 @@ public class CrearEvento extends javax.swing.JPanel {
     jSeparator2.setForeground(new java.awt.Color(196, 205, 213));
     add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 59, 1090, 10));
 
-    jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-    jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel2.setText("¡CREA TU PROPIO EVENTO!");
-    add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 115, 250, 23));
+    tituloCrear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+    tituloCrear.setForeground(new java.awt.Color(255, 255, 255));
+    tituloCrear.setText("¡CREA TU PROPIO EVENTO!");
+    add(tituloCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 115, 250, 23));
 
-    jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-    jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel3.setText("Crea tu propio evento y conoce personas con los mismos gustos con los que disfrutar de actividades multiples ¡Anímate!");
-    add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 148, 757, 25));
+    subtituloCrear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+    subtituloCrear.setForeground(new java.awt.Color(255, 255, 255));
+    subtituloCrear.setText("Crea tu propio evento y conoce personas con los mismos gustos con los que disfrutar de actividades multiples ¡Anímate!");
+    add(subtituloCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 148, 757, 25));
 
     crearEvento.setBackground(new java.awt.Color(159, 255, 0));
     crearEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
@@ -103,15 +104,15 @@ public class CrearEvento extends javax.swing.JPanel {
     crearEvento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     add(crearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(479, 688, 170, 34));
 
-    jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
-    jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel5.setText("Tipo de Evento");
-    add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 432, 120, 24));
+    tipoEvento.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    tipoEvento.setForeground(new java.awt.Color(255, 255, 255));
+    tipoEvento.setText("Tipo de Evento");
+    add(tipoEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 432, 120, 24));
 
-    jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
-    jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel4.setText("Nombre del evento");
-    add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 375, 150, 24));
+    nombre.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 15)); // NOI18N
+    nombre.setForeground(new java.awt.Color(255, 255, 255));
+    nombre.setText("Nombre del evento");
+    add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 375, 150, 24));
 
     jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/añadirVerde.png"))); // NOI18N
     jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -120,16 +121,16 @@ public class CrearEvento extends javax.swing.JPanel {
     jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/iconoEvento.png"))); // NOI18N
     add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 218, 124, 124));
 
-    jLabel8.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
-    jLabel8.setForeground(new java.awt.Color(159, 255, 0));
-    jLabel8.setText("Volver al Inicio");
-    jLabel8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-    jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+    volverCrear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 16)); // NOI18N
+    volverCrear.setForeground(new java.awt.Color(159, 255, 0));
+    volverCrear.setText("Volver al Inicio");
+    volverCrear.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    volverCrear.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseClicked(java.awt.event.MouseEvent evt) {
-        jLabel8MouseClicked(evt);
+        volverCrearMouseClicked(evt);
       }
     });
-    add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
+    add(volverCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 25, 130, 19));
 
     jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/salirVerde.png"))); // NOI18N
     jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -152,32 +153,42 @@ public class CrearEvento extends javax.swing.JPanel {
     // TODO add your handling code here:
   }//GEN-LAST:event_nombreEvento1ActionPerformed
 
-  private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+  private void volverCrearMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volverCrearMouseClicked
     setVisible(false);
     // TODO add your handling code here:
-  }//GEN-LAST:event_jLabel8MouseClicked
+  }//GEN-LAST:event_volverCrearMouseClicked
 
   private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
     setVisible(false);
     // TODO add your handling code here:
   }//GEN-LAST:event_jLabel9MouseClicked
 
+  public void idiomaInglesCrearEventos() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    tipoEvento.setText(idioma.getString("CrearEvento.eventType"));
+    nombre.setText(idioma.getString("CrearEvento.name"));
+    crearEvento.setText(idioma.getString("CrearEvento.createButton"));
+    tituloCrear.setText(idioma.getString("CrearEvento.title"));
+    subtituloCrear.setText(idioma.getString("CrearEvento.subtitle"));
+    volverCrear.setText(idioma.getString("CrearEvento.returnHome"));
+
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton crearEvento;
   private javax.swing.JTextField descripcionEvento;
   private javax.swing.JComboBox<String> jComboBox1;
   private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel4;
-  private javax.swing.JLabel jLabel5;
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel7;
-  private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
   private javax.swing.JSeparator jSeparator1;
   private javax.swing.JSeparator jSeparator2;
+  private javax.swing.JLabel nombre;
   private javax.swing.JTextField nombreEvento1;
   private javax.swing.JPanel panelEventos;
+  private javax.swing.JLabel subtituloCrear;
+  private javax.swing.JLabel tipoEvento;
+  private javax.swing.JLabel tituloCrear;
+  private javax.swing.JLabel volverCrear;
   // End of variables declaration//GEN-END:variables
 }

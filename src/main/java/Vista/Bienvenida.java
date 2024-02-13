@@ -7,6 +7,7 @@ package Vista;
 import Controlador.cBienvenida;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.FlatLightLaf;
+import java.util.ResourceBundle;
 import lombok.Getter;
 
 /**
@@ -42,10 +43,9 @@ public class Bienvenida extends javax.swing.JFrame {
   private void initComponents() {
 
     frame = new javax.swing.JPanel();
-    panelAbsoluto = new javax.swing.JPanel();
     jPanel3 = new javax.swing.JPanel();
-    jLabel1 = new javax.swing.JLabel();
-    jLabel5 = new javax.swing.JLabel();
+    tituloBienvenida = new javax.swing.JLabel();
+    textoBienvenida = new javax.swing.JLabel();
     jLabel6 = new javax.swing.JLabel();
     jLabel2 = new javax.swing.JLabel();
     SalirPagina = new javax.swing.JLabel();
@@ -60,9 +60,9 @@ public class Bienvenida extends javax.swing.JFrame {
     VistaFestivales = new javax.swing.JLabel();
     VistaDescubrir = new javax.swing.JLabel();
     CrearEvento = new javax.swing.JLabel();
-    jLabel33 = new javax.swing.JLabel();
-    jLabel34 = new javax.swing.JLabel();
-    jLabel35 = new javax.swing.JLabel();
+    eventos2 = new javax.swing.JLabel();
+    eventos = new javax.swing.JLabel();
+    citas = new javax.swing.JLabel();
     jLabel36 = new javax.swing.JLabel();
     jLabel37 = new javax.swing.JLabel();
     jLabel38 = new javax.swing.JLabel();
@@ -73,8 +73,11 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel43 = new javax.swing.JLabel();
     irUsuario = new javax.swing.JLabel();
     jLabel8 = new javax.swing.JLabel();
+    Ingles = new javax.swing.JLabel();
+    Español1 = new javax.swing.JLabel();
     jPanel2 = new javax.swing.JPanel();
     searchTf = new javax.swing.JTextField();
+    panelAbsoluto = new javax.swing.JPanel();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     setBackground(new java.awt.Color(53, 49, 48));
@@ -83,26 +86,20 @@ public class Bienvenida extends javax.swing.JFrame {
     frame.setBackground(new java.awt.Color(53, 49, 48));
     frame.setOpaque(false);
     frame.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-    panelAbsoluto.setBackground(new java.awt.Color(53, 49, 48));
-    panelAbsoluto.setOpaque(false);
-    panelAbsoluto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-    frame.add(panelAbsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
-
     getContentPane().add(frame, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 66, 1150, 800));
 
     jPanel3.setBackground(new java.awt.Color(75, 76, 73));
     jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 25)); // NOI18N
-    jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel1.setText("BIENVENIDOS A KOIRYU");
-    jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 78, 327, 39));
+    tituloBienvenida.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 25)); // NOI18N
+    tituloBienvenida.setForeground(new java.awt.Color(255, 255, 255));
+    tituloBienvenida.setText("BIENVENIDOS A KOIRYU");
+    jPanel3.add(tituloBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 78, 327, 39));
 
-    jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
-    jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-    jLabel5.setText("<html>\n<div style=\"text-align:justify;\">\nOs damos la bienvenida a Koiryu, Creada por alumnos del ciclo de Desarrollo  de Aplicaciones Multiplataforma.Esta idea para el proyecto fue ideada en la  asignatura de Empresa e iniciativa emprendedora donde trabajamos la idea de  proyecto y ahora gracias a las asignaturas de Desarrollo de Interfaces y Acceso  a datos le daremos forma y funcionalidad a la misma. Os recibimos a todos con  los brazos abiertos y esperamos que disfruteis de la experiencia. \n</div>\n</hmtl>");
-    jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 198, 763, 166));
+    textoBienvenida.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 20)); // NOI18N
+    textoBienvenida.setForeground(new java.awt.Color(255, 255, 255));
+    textoBienvenida.setText("<html>\n<div style=\"text-align:justify;\">\nOs damos la bienvenida a Koiryu, Creada por alumnos del ciclo de Desarrollo  de Aplicaciones Multiplataforma.Esta idea para el proyecto fue ideada en la  asignatura de Empresa e iniciativa emprendedora donde trabajamos la idea de  proyecto y ahora gracias a las asignaturas de Desarrollo de Interfaces y Acceso  a datos le daremos forma y funcionalidad a la misma. Os recibimos a todos con  los brazos abiertos y esperamos que disfruteis de la experiencia. \n</div>\n</hmtl>");
+    jPanel3.add(textoBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 198, 763, 166));
 
     jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/IconoKoiryu_Blanco_sin_fondo_pequeña.png"))); // NOI18N
     jLabel6.setText("jLabel6");
@@ -204,20 +201,20 @@ public class Bienvenida extends javax.swing.JFrame {
     });
     jPanel1.add(CrearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 280, 110, 18));
 
-    jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-    jLabel33.setForeground(new java.awt.Color(145, 158, 171));
-    jLabel33.setText("Eventos");
-    jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 160, 60, 18));
+    eventos2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
+    eventos2.setForeground(new java.awt.Color(145, 158, 171));
+    eventos2.setText("Eventos");
+    jPanel1.add(eventos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 160, 60, 18));
 
-    jLabel34.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-    jLabel34.setForeground(new java.awt.Color(99, 115, 129));
-    jLabel34.setText("EVENTOS");
-    jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 129, 90, 15));
+    eventos.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+    eventos.setForeground(new java.awt.Color(99, 115, 129));
+    eventos.setText("EVENTOS");
+    jPanel1.add(eventos, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 129, 90, 15));
 
-    jLabel35.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
-    jLabel35.setForeground(new java.awt.Color(99, 115, 129));
-    jLabel35.setText("CITAS");
-    jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 338, 90, 15));
+    citas.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+    citas.setForeground(new java.awt.Color(99, 115, 129));
+    citas.setText("CITAS");
+    jPanel1.add(citas, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 338, 90, 15));
 
     jLabel36.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
     jLabel36.setForeground(new java.awt.Color(99, 115, 129));
@@ -274,6 +271,24 @@ public class Bienvenida extends javax.swing.JFrame {
     jLabel8.setText("jLabel8");
     jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 801, 40, 40));
 
+    Ingles.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/reino-unido.png"))); // NOI18N
+    Ingles.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Ingles.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        InglesMouseClicked(evt);
+      }
+    });
+    jPanel1.add(Ingles, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 810, 20, 20));
+
+    Español1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/España.png"))); // NOI18N
+    Español1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+    Español1.addMouseListener(new java.awt.event.MouseAdapter() {
+      public void mouseClicked(java.awt.event.MouseEvent evt) {
+        Español1MouseClicked(evt);
+      }
+    });
+    jPanel1.add(Español1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 810, 20, 20));
+
     getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 863));
 
     jPanel2.setBackground(new java.awt.Color(75, 76, 73));
@@ -284,6 +299,11 @@ public class Bienvenida extends javax.swing.JFrame {
     jPanel2.add(searchTf, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 12, 282, 42));
 
     getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 1144, 66));
+
+    panelAbsoluto.setBackground(new java.awt.Color(53, 49, 48));
+    panelAbsoluto.setForeground(new java.awt.Color(53, 49, 48));
+    panelAbsoluto.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    getContentPane().add(panelAbsoluto, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 1150, 870));
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
@@ -331,6 +351,28 @@ public class Bienvenida extends javax.swing.JFrame {
     repaint();
   }//GEN-LAST:event_VistaInicioMouseClicked
 
+  private void Español1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Español1MouseClicked
+    // TODO add your handling code here:
+    //Controlador.IdiomaEspañol();
+  }//GEN-LAST:event_Español1MouseClicked
+
+  private void InglesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InglesMouseClicked
+    // TODO add your handling code here:
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    VistaDescubrir.setText(idioma.getString("navigation.discover"));
+    eventos.setText(idioma.getString("navigation.eventos"));
+    citas.setText(idioma.getString("navigation.citas"));
+    VistaInicio.setText(idioma.getString("navigation.home"));
+    eventos2.setText(idioma.getString("navigation.eventos"));
+    VistaFestivales.setText(idioma.getString("navigation.festivals"));
+    VistaArte.setText(idioma.getString("navigation.art"));
+    VistaNaturaleza.setText(idioma.getString("navigation.nature"));
+    CrearEvento.setText(idioma.getString("navigation.createEvent"));
+    tituloBienvenida.setText(idioma.getString("Bienvenida.title"));
+    textoBienvenida.setText(idioma.getString("Bienvenida.message"));
+
+  }//GEN-LAST:event_InglesMouseClicked
+
   /**
    * Main.
    *
@@ -347,16 +389,24 @@ public class Bienvenida extends javax.swing.JFrame {
         if ("Nimbus".equals(info.getName())) {
           javax.swing.UIManager.setLookAndFeel(info.getClassName());
           break;
+
         }
       }
     } catch (ClassNotFoundException ex) {
-      java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(Bienvenida.class
+        .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
     } catch (InstantiationException ex) {
-      java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(Bienvenida.class
+        .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
     } catch (IllegalAccessException ex) {
-      java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(Bienvenida.class
+        .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-      java.util.logging.Logger.getLogger(Bienvenida.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+      java.util.logging.Logger.getLogger(Bienvenida.class
+        .getName()).log(java.util.logging.Level.SEVERE, null, ex);
     }
     //</editor-fold>
 
@@ -370,23 +420,24 @@ public class Bienvenida extends javax.swing.JFrame {
 
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel CrearEvento;
+  private javax.swing.JLabel Español1;
+  private javax.swing.JLabel Ingles;
   private javax.swing.JLabel SalirPagina;
   private javax.swing.JLabel VistaArte;
   private javax.swing.JLabel VistaDescubrir;
   private javax.swing.JLabel VistaFestivales;
   private javax.swing.JLabel VistaInicio;
   private javax.swing.JLabel VistaNaturaleza;
+  private javax.swing.JLabel citas;
+  private javax.swing.JLabel eventos;
+  private javax.swing.JLabel eventos2;
   private javax.swing.JPanel frame;
   private javax.swing.JLabel irUsuario;
-  private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel16;
   private javax.swing.JLabel jLabel17;
   private javax.swing.JLabel jLabel2;
   private javax.swing.JLabel jLabel29;
   private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel33;
-  private javax.swing.JLabel jLabel34;
-  private javax.swing.JLabel jLabel35;
   private javax.swing.JLabel jLabel36;
   private javax.swing.JLabel jLabel37;
   private javax.swing.JLabel jLabel38;
@@ -395,7 +446,6 @@ public class Bienvenida extends javax.swing.JFrame {
   private javax.swing.JLabel jLabel41;
   private javax.swing.JLabel jLabel42;
   private javax.swing.JLabel jLabel43;
-  private javax.swing.JLabel jLabel5;
   private javax.swing.JLabel jLabel6;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JPanel jPanel1;
@@ -403,6 +453,8 @@ public class Bienvenida extends javax.swing.JFrame {
   private javax.swing.JPanel jPanel3;
   private javax.swing.JPanel panelAbsoluto;
   private javax.swing.JTextField searchTf;
+  private javax.swing.JLabel textoBienvenida;
+  private javax.swing.JLabel tituloBienvenida;
   // End of variables declaration//GEN-END:variables
 
 }

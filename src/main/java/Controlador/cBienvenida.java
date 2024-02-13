@@ -42,5 +42,18 @@ public class cBienvenida {
     Vista.getFrame().revalidate();
     Vista.getFrame().repaint();
   }
+  /*
+  public static void IdiomaEspañol() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+
+    // Ejemplo de cómo establecer el texto de un botón
+    Vistadescubrir.setText(idioma.getString());
+    JButton boton = new JButton();
+    boton.setText(idioma.getString("etiqueta_boton_abrir"));
+
+    // Ejemplo de cómo establecer el texto de una etiqueta
+    JLabel etiqueta = new JLabel();
+    etiqueta.setText(idioma.getString("etiqueta_bienvenida"));
+  }*/
 
 }

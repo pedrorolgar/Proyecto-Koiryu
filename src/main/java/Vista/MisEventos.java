@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Pedro Rollán García
@@ -38,6 +40,7 @@ public class MisEventos extends javax.swing.JPanel {
     jLabel8 = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
     jLabel10 = new javax.swing.JLabel();
+    jPanel1 = new javax.swing.JPanel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -87,8 +90,19 @@ public class MisEventos extends javax.swing.JPanel {
 
     jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FlechaAbajoVerde.png"))); // NOI18N
     add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 88, -1, -1));
-  }// </editor-fold>//GEN-END:initComponents
 
+    jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
+  }// </editor-fold>//GEN-END:initComponents
+public void idiomaInglesMisEventos() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    jLabel1.setText(idioma.getString("MisEventos.events"));
+    jLabel3.setText(idioma.getString("MisEventos.name"));
+    jLabel4.setText(idioma.getString("MisEventos.description"));
+    jLabel5.setText(idioma.getString("MisEventos.author"));
+    jLabel6.setText(idioma.getString("MisEventos.type"));
+
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton jButton1;
   private javax.swing.JLabel jLabel1;
@@ -101,5 +115,6 @@ public class MisEventos extends javax.swing.JPanel {
   private javax.swing.JLabel jLabel7;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
+  private javax.swing.JPanel jPanel1;
   // End of variables declaration//GEN-END:variables
 }

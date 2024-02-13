@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Pedro Rollán García
@@ -30,6 +32,7 @@ public class EventosFestivales extends javax.swing.JPanel {
     jLabel8 = new javax.swing.JLabel();
     jLabel9 = new javax.swing.JLabel();
     jLabel1 = new javax.swing.JLabel();
+    jPanel1 = new javax.swing.JPanel();
 
     setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -57,6 +60,10 @@ public class EventosFestivales extends javax.swing.JPanel {
     jLabel1.setForeground(new java.awt.Color(159, 255, 0));
     jLabel1.setText("Para ti");
     add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(494, 65, 110, 38));
+
+    jPanel1.setBackground(new java.awt.Color(53, 49, 48));
+    jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 800));
   }// </editor-fold>//GEN-END:initComponents
 
   private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
@@ -69,9 +76,16 @@ public class EventosFestivales extends javax.swing.JPanel {
     // TODO add your handling code here:
   }//GEN-LAST:event_jLabel8MouseClicked
 
+  public void idiomaInglesEventosfestivales() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+    jLabel1.setText(idioma.getString("EventosArte.forYou"));
+
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JLabel jLabel1;
   private javax.swing.JLabel jLabel8;
   private javax.swing.JLabel jLabel9;
+  private javax.swing.JPanel jPanel1;
   // End of variables declaration//GEN-END:variables
 }

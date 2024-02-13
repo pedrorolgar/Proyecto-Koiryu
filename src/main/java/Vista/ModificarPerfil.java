@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author Pedro Rollán García
@@ -165,6 +167,16 @@ public class ModificarPerfil extends javax.swing.JPanel {
 
   }//GEN-LAST:event_jLabel8MouseClicked
 
+  public void idiomaInglesMisEventos() {
+    ResourceBundle idioma = ResourceBundle.getBundle("idioma");
+    jLabel11.setText(idioma.getString("ModificarPerfil.email"));
+    jLabel3.setText(idioma.getString("ModificarPerfil.username"));
+    jLabel4.setText(idioma.getString("ModificarPerfil.city"));
+    jLabel5.setText(idioma.getString("ModificarPerfil.description"));
+    jLabel6.setText(idioma.getString("ModificarPerfil.phone"));
+    EditarCambios.setText(idioma.getString("ModificarPerfil.saveChanges"));
+    jLabel8.setText(idioma.getString("CrearEvento.returnHome"));
+  }
   // Variables declaration - do not modify//GEN-BEGIN:variables
   private javax.swing.JButton EditarCambios;
   private javax.swing.JTextField ciudad;
